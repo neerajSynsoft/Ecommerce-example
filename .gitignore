@@ -1,0 +1,33 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+# dist
+
+# Backpack build
+build
+
+#server config
+development.config.json
+production.config.json
+local.config.json
+ecosystem.config.js
+
+#/uploads
+/static/embed-form
+/static/uploads/temp
+/static/uploads/header-images
+/static/uploads/product-images
+/static/uploads/testimonial-images
+/log
+/dump
+.DS_Store
+/assets/.DS_Store
+embed-form/cdn/
+config/index.js

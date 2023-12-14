@@ -1,0 +1,51 @@
+ fs (File System):
+
+fs module provides file I/O functionality.
+Example functions: fs.readFile, fs.writeFile, fs.readdir, etc.
+http:
+
+http module allows you to create HTTP servers and make HTTP requests.
+Example functions: http.createServer, http.request, etc.
+https:
+https module is similar to the http module but for HTTPS.
+Example functions: https.createServer, https.request, etc.
+path:
+
+path module provides utilities for working with file and directory paths.
+Example functions: path.join, path.resolve, etc.
+url:
+
+url module helps in parsing and formatting URL strings.
+Example functions: url.parse, url.format, etc.
+util:
+
+util module provides utility functions useful for debugging and other purposes.
+Example functions: util.promisify, util.inspect, etc.
+events:
+
+events module provides an EventEmitter class to handle and emit events.
+Example functions: events.EventEmitter, emitter.on, emitter.emit, etc.
+querystring:
+
+querystring module provides utilities for working with query strings.
+Example functions: querystring.parse, querystring.stringify, etc.
+crypto:
+
+crypto module provides cryptographic functionality.
+Example functions: crypto.createHash, crypto.createHmac, etc.
+os:
+
+os module provides operating system-related utility functions.
+Example functions: os.platform, os.cpus, etc.
+stream:
+
+stream module provides an interface for streaming data.
+Example classes: stream.Readable, stream.Writable, etc.
+process:
+
+process module provides information about the current Node.js process.
+Example properties: process.argv, process.env, etc.
+dns:
+
+dns module provides functions to perform DNS lookups.
+Example functions: dns.lookup, dns.resolve, etc.

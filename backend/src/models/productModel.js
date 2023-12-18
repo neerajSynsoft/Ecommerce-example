@@ -9,7 +9,10 @@ const productSchema = new Schema({
     discountPercentage: Number,
     rating: Number,
     stock: Number,
-    category: String,
+    categoryId: {
+        type: Schema.Types.ObjectId,
+        ref: 'Category',
+      },
     brand: String,
     thumbnail: String,
     images: [ String ]

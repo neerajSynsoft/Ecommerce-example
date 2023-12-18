@@ -3,10 +3,11 @@ import mongoose from 'mongoose';
 import productRoutes from './src/routes/productRoutes.js';
 import categoryRoutes from './src/routes/categoryRoutes.js';
 import userRoutes from './src/routes/userRoutes.js';
+import { connectToDatabase } from './src/dbConnection/db.js';
 
 const app = express()
-const port = process.env.PORT || 3000;
-mongoose.connect('mongodb://localhost:27017/testdb');
+const port = process.env.PORT || 6000;
+connectToDatabase();
 
 // Middleware to parse JSON
 app.use(express.json());

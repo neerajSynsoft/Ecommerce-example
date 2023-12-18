@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 const { Schema, model } = mongoose;
 
 const categorySchema = new Schema({
-    category: String,
+    name: String,
 });
 
 const Category = model('Category', categorySchema);

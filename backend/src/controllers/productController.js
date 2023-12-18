@@ -1,4 +1,5 @@
 import Product from '../models/productModel.js';
+import { default as json} from '../data/products.json' assert { type: 'json' };
 
 // Get all products
 export const getAllProducts = async (req, res) => {
@@ -23,13 +24,45 @@ export const getProductById = async (req, res) => {
   }
 };
 
-// Create a new product
+// // Create a new product
+// export const createProduct = async (req, res) => {
+//   try {
+//     const newProduct = new Product(req.body);
+//     const savedProduct = await newProduct.save();
+//     res.json(savedProduct);
+//   } catch (error) {
+//     res.status(500).json({ error: error.message });
+//   }
+// };
+
+// Create multiple products
 export const createProduct = async (req, res) => {
   try {
-    const newProduct = new Product(req.body);
-    const savedProduct = await newProduct.save();
-    res.json(savedProduct);
+    // Validate that the request body is an array of products
+    console.log('req===',req.body);
+    if (!Array.isArray(req.body)) {
+      return res.status(400).json({ error: 'Invalid request body. Expected an array of products.' });
+    }
+
+    // Create an array to store the saved products
+    const savedProducts = [];
+
+    // Iterate through the array of products in the request body
+    for (const productData of req.body) {
+      // Validate each product based on the Product model schema
+      const newProduct = new Product(productData);
+
+      // Save the product to the database
+      const savedProduct = await newProduct.save();
+
+      // Add the saved product to the array
+      savedProducts.push(savedProduct);
+    }
+
+    // Respond with a 201 Created status and the array of created products
+    res.status(201).json({ message: 'Products created successfully', products: savedProducts });
   } catch (error) {
+    // Handle validation errors or other database-related errors
     res.status(500).json({ error: error.message });
   }
 };

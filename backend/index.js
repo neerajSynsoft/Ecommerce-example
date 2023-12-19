@@ -6,7 +6,7 @@ import userRoutes from './src/routes/userRoutes.js';
 import { connectToDatabase } from './src/dbConnection/db.js';
 
 const app = express()
-const port = process.env.PORT || 6000;
+const port = process.env.PORT || 8080;
 connectToDatabase();
 
 // Middleware to parse JSON

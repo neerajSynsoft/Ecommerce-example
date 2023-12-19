@@ -24,19 +24,19 @@ export const getProductById = async (req, res) => {
   }
 };
 
-// // Create a new product
-// export const createProduct = async (req, res) => {
-//   try {
-//     const newProduct = new Product(req.body);
-//     const savedProduct = await newProduct.save();
-//     res.json(savedProduct);
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// };
+// Create a new product
+export const createProduct = async (req, res) => {
+  try {
+    const newProduct = new Product(req.body);
+    const savedProduct = await newProduct.save();
+    res.json(savedProduct);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
 
 // Create multiple products
-export const createProduct = async (req, res) => {
+export const createProducts = async (req, res) => {
   try {
     // Validate that the request body is an array of products
     console.log('req===',req.body);

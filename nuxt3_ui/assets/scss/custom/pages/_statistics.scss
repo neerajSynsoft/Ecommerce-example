@@ -1,0 +1,321 @@
+// 
+// _statistics.scss
+// 
+
+.statistics-page {
+
+  .top-title-barr  {
+    justify-content: space-between;
+  } 
+  .p-statistics {
+    .cell.stat-card {
+      background: #FFFFFF;
+      box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+      border-radius: 16px;
+      padding: 20px 25px;
+
+      .stat-card-title {
+        margin-bottom: 25px;
+      }
+
+      .portlet-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #203551;
+        margin: 0 0 0 15px;
+      }
+      .portlet-value {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #203551;
+        margin: 0;
+
+        &.big {
+          font-size: 50px;
+          line-height: 61px;
+        }
+        &.small {
+          margin-bottom: 10px;
+        }
+      }
+      .stat-card-row {
+        .stat-card-col {
+          border-right: 1px solid #E0E9F4;
+          padding: 0 25px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            border-right: none;
+            padding-right: 0;
+          }
+        }
+      }
+      .portlet-title-sm {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #6C7E95;
+      }
+      .stat-card-column {
+        display: flex;
+        flex-direction: column;
+
+        .stat-card-column-list {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .portlet-value {
+            &.small {
+              font-size: 20px;
+              line-height: 24px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .r2 {
+      .cell.stat-card {
+        padding: 20px;
+
+        .stat-card-row {
+          .stat-card-col {
+            width: 25%;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+              width: 210px;
+            }
+          }
+        }
+      }
+    }
+    .r3 {
+      .cell.stat-card {
+        .stat-card-row {
+          .stat-card-col {
+            width: 33.333%;
+
+            &:nth-child(2) {
+              width: 192px;
+            }
+          }
+        }
+      }
+    }
+    .r1, .r2, .r3, .r4, .r5, .r6 {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+
+      .cell.stat-card {
+        height: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+@media(max-width: 767px) {
+  .statistics-page {
+    .top-title-barr {
+      .top-right-buttons {
+        width: 100%;
+        justify-content: space-between;
+
+        .stats-date-filter {
+          max-width: 200px;
+        }
+      }
+    }
+
+    .cell.stat-card {
+      padding: 20px;
+
+      .stat-card-row {
+        flex-direction: column;
+        
+        .stat-card-col {
+          flex-direction: row-reverse !important;
+          width: 100% !important;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          border: none !important;
+          padding: 0 !important;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .portlet-value {
+            &.small {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .r7, .r8 {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media(max-width: 575px) {
+  .statistics-page {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 !important;
+
+    .pp-page-title {
+      margin: 0 20px 20px !important;
+      padding: 0 0 20px;
+      border-bottom: 1px solid #E0E9F4 !important;
+
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    .static-filter {
+      .b-white {
+        width: 50%;
+      }
+    }
+
+    .p-statistics {
+
+      .row {
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+
+      .cell.stat-card {
+        border-radius: 0;
+
+        .stat-card-title {
+          margin-bottom: 0;
+        }
+
+        .portlet-title {
+          max-width: 100% !important;
+          text-overflow: unset;
+          white-space: unset;
+          overflow: unset;
+        }
+        .stat-card-row,
+        .stat-card-column {
+          margin-top: 20px !important;
+        }
+
+        // .collapsed > .when-opened,
+        // :not(.collapsed) > .when-closed {
+        //   display: none;
+        // }
+        .stat-card-title[aria-expanded="false"] .arrow {
+          transform: rotate(180deg);
+          transition: all .3s ease-in-out;
+        }
+        .stat-card-title[aria-expanded="true"] .arrow {
+          transform: rotate(0deg);
+          transition: all .3s ease-in-out;
+        }
+      }
+
+      .r1 {
+        .cell.stat-card {
+          .stat-card-title {
+            margin-bottom: 0;
+          }
+          .portlet-value {
+            &.big {
+              font-size: 24px;
+              line-height: 29px;
+            }
+          }
+        }
+      }
+
+      .r2 {
+        .cell.stat-card {
+          padding: 20px 25px;
+        }
+      }
+
+      .st-box-title {
+        margin-bottom: 0;
+        justify-content: space-between;
+      }
+
+      &.min-h {
+        min-height: auto;
+      }
+
+      .conversion-window-con,
+      .apex-charts-wrapper {
+        margin-top: 20px;
+      }
+    }
+
+    .box_wrap_first {
+      margin: 0 !important;
+    }
+    .box_wrap {
+      .tracking {
+        .product_status {
+          margin-top: 20px;
+        }
+      }
+    }
+    .portlet {
+      border-radius: 0;
+    }
+  }
+
+  .product-list-page {
+    .reportrange-text {
+      .b-white {
+        justify-content: space-between;
+      }
+      .caldate-text {
+        max-width: 70px;
+      }
+    }
+
+    &.mobile-spaceLR {
+      .p-statistics {
+        padding: 20px 25px;
+
+        .st-box-title[aria-expanded="false"] .arrow {
+          transform: rotate(180deg);
+          transition: all .3s ease-in-out;
+        }
+        .st-box-title[aria-expanded="true"] .arrow {
+          transform: rotate(0deg);
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  body[data-sidebar-color="dark"] .statistics-page {
+
+    .pp-page-title {
+      border-bottom: 1px solid #565B70 !important;
+    }
+  }
+}

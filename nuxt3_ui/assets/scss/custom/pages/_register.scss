@@ -1,0 +1,132 @@
+// 
+// register.scss
+//
+
+.register-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 130px;
+
+  .tpp-primary {
+    color: #203551;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+  .tpp-link {
+    color: #2e47ba !important;
+  }
+  .btn-blue {
+    background: #2e47ba;
+    border-radius: 8px;
+    color: #fff;
+  }
+  .font-weight-normal {
+    color: #6c7e95;
+  }
+
+  .card-login {
+    background: #ffffff;
+    box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+    border-radius: 16px;
+    padding: 20px 0;
+    width: 454px;
+  }
+  .login-header {
+    border-bottom: 1px solid #e0e9f4;
+    padding: 0px 25px 20px;
+  
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0.02em;
+      color: #203551;
+      margin: 0;
+    }
+    p {
+      max-width: 301px;
+      margin-top: 10px;
+    }
+  }
+  form {
+    padding: 20px 25px 25px;
+    border-bottom: 1px solid #e0e9f4;
+    margin-bottom: 25px;
+  }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #2e47ba;
+    background-color: #2e47ba;
+  }
+  .vs-form-control {
+    margin-top: 5px;
+  
+    input {
+      background: #ffffff !important;
+      border: 1px solid #bfcee0;
+      border-radius: 8px !important;
+      font-size: 13px !important;
+      line-height: 18px !important;
+      letter-spacing: 0.02em !important;
+      color: #203551 !important;
+  
+      &::placeholder {
+        font-size: 13px !important;
+        line-height: 18px !important;
+        letter-spacing: 0.02em !important;
+      }
+    }
+  }
+  .input-auth {
+    position: relative;
+  
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 9px);
+      width: 18px;
+      height: 18px;
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .register-container {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    margin-top: 44px;
+
+    .card-login {
+      width: 100%;
+      box-shadow: none;
+    }
+  
+    .login-header {
+      text-align: center;
+  
+      p {
+        max-width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .register-container {
+    .card-login {
+      width: 100%;
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+}

@@ -1,0 +1,434 @@
+body[data-sidebar-color='dark'] .pp-button-blue--border {
+  color: #93a6ff;
+  border: 1px solid #93a6ff;
+  color: #93a6ff;
+}
+
+body[data-sidebar-color='dark'] .pp-button-blue--border span {
+  color: #93a6ff;
+}
+
+body[data-sidebar-color='dark'] .pp-button-white--fill {
+  background-color: #353a53;
+  border: 1px solid rgba(224, 233, 244, 0.2);
+  color: #94a0ad;
+}
+
+body[data-sidebar-color='dark'] .pp-button-white--fill span {
+  color: #94a0ad;
+}
+
+body[data-sidebar-color='dark'] .pp-button-white--border {
+  background-color: #353a53;
+  border: 1px solid rgba(224, 233, 244, 0.2);
+  color: #94a0ad;
+}
+
+body[data-sidebar-color='dark'] .pp-button-white--border span {
+  color: #94a0ad;
+}
+
+body[data-sidebar-color='dark'] .pp-btn-border-blue .vs-button__content {
+  border-color: #93a6ff;
+  color: #93a6ff;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .reportrange-text .pp-date-range-picker-input {
+  background-color: #353a53;
+  border: 1px solid rgba(191, 206, 224, 0.33);
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .reportrange-text .pp-date-range-picker-input .pp-date-range-picker-sideleft-group .pickup-date-text {
+  color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker {
+  background-color: #353a53;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 15px 20px rgba(39, 43, 62, 0.3);
+          box-shadow: 0px 15px 20px rgba(39, 43, 62, 0.3);
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .ranges {
+  background-color: #3f4560;
+  border-right: 1px solid #636b81;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .ranges ul li {
+  color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .ranges ul li:hover, body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .ranges ul li.active {
+  background-color: #93a6ff;
+  color: #1e2130;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table {
+  background-color: #353a53;
+  border: 1px solid transparent;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th {
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.month {
+  color: #ffffff;
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.next span, body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.prev span {
+  border-color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr th {
+  color: #ffffff;
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td {
+  border: 1px solid #596175;
+  color: #ffffff;
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off {
+  background: transparent;
+  color: #aeb1c0;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off.in-range {
+  background-color: #565d7d;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.weekend {
+  color: #f36565;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range {
+  background: #565d7d;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active {
+  color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.start-date, body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.end-date {
+  background-color: #2e47ba;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.start-date.off, body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.end-date.off {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(46, 72, 186, 0.5);
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .drp-buttons {
+  border-top: 1px solid #636b81;
+}
+
+body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn {
+  background-color: transparent;
+  border: 1px solid #93a6ff;
+  color: #93a6ff;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker {
+  background-color: #353a53;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 15px 20px rgba(39, 43, 62, 0.3);
+          box-shadow: 0px 15px 20px rgba(39, 43, 62, 0.3);
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges {
+  background-color: #3f4560;
+  border-right: 1px solid #636b81;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges ul li {
+  color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges ul li:hover, body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges ul li.active {
+  background-color: #93a6ff;
+  color: #1e2130;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table {
+  background-color: #353a53;
+  border: 1px solid transparent;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th {
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.month {
+  color: #ffffff;
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.next span, body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.prev span {
+  border-color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr th {
+  color: #ffffff;
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td {
+  border: 1px solid #596175;
+  color: #ffffff;
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off {
+  background: transparent;
+  color: #aeb1c0;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off.in-range {
+  background-color: #565d7d;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.weekend {
+  color: #f36565;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range {
+  background: #565d7d;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active {
+  color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.start-date, body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.end-date {
+  background-color: #2e47ba;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.start-date.off, body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range.active.end-date.off {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(46, 72, 186, 0.5);
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .drp-buttons {
+  border-top: 1px solid #636b81;
+}
+
+body[data-sidebar-color='dark'] > .daterangepicker .drp-buttons .cancelBtn {
+  background-color: transparent;
+  border: 1px solid #93a6ff;
+  color: #93a6ff;
+}
+
+body[data-sidebar-color='dark'] .pp-date-picker .mx-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #353a53 !important;
+  border: 1px solid rgba(191, 206, 224, 0.33) !important;
+  color: #ffffff !important;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-datepicker-content {
+  background-color: #353a53;
+  border-radius: 8px;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-calendar-header-label .mx-btn {
+  color: #FFFFFF;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-calendar-header-label .mx-btn:hover {
+  color: #93A6FF;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-icon-left::before, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-icon-right::before {
+  border-color: #FFFFFF;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table {
+  border-collapse: separate;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table thead tr th {
+  font-weight: 500;
+  background: transparent;
+  color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td {
+  border: 1px solid #596175;
+  color: #ffffff;
+  background: transparent;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.not-current-month, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.disabled {
+  background: transparent !important;
+  color: #aeb1c0 !important;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.active, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.today {
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child {
+  border-left-style: solid;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child {
+  color: #f36565;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.active, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.active {
+  background-color: #2e47ba;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.disabled, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.disabled {
+  color: #aeb1c0;
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.not-current-month, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.not-current-month {
+  color: rgba(243, 101, 101, 0.5);
+}
+
+body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.not-current-month.disabled, body[data-sidebar-color='dark'] > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.not-current-month.disabled {
+  background: transparent;
+  color: #aeb1c0;
+}
+
+body[data-sidebar-color='dark'] .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer {
+  background-color: #33384e;
+}
+
+body[data-sidebar-color='dark'] .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .vs-table {
+  background-color: #33384e;
+}
+
+body[data-sidebar-color='dark'] .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .vs-table .vs-table__thead .vs-table__th {
+  background-color: #33384e !important;
+}
+
+body[data-sidebar-color='dark'] .pp-popover {
+  border: 1px solid #203551 !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  background-color: #203551;
+}
+
+body[data-sidebar-color='dark'] .pp-popover ul li:hover {
+  background-color: #2f4665 !important;
+}
+
+body[data-sidebar-color='dark'] .pp-popover.bs-popover-right > .arrow::after, body[data-sidebar-color='dark'] .pp-popover.bs-popover-right > .arrow::before {
+  border-right-color: #203551 !important;
+}
+
+body[data-sidebar-color='dark'] .pp-input-vuesax.pp-input-vuesax--no-border .vs-input {
+  background-color: transparent !important;
+  border: 1px solid transparent;
+}
+
+@media (max-width: 1024px) {
+  body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .drp-header h3 {
+    color: #ffffff;
+  }
+  body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .ranges {
+    background-color: transparent;
+    border: none;
+  }
+  body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .btn-light {
+    background-color: #353a53;
+    border: 1px solid rgba(191, 206, 224, 0.33);
+  }
+  body[data-sidebar-color='dark'] .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .btn-light p {
+    color: #ffffff;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .drp-header {
+    background-color: #353a53;
+    border-bottom: 1px solid #636b81;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .drp-header h3 {
+    color: #ffffff;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars {
+    background-color: #353a53;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges {
+    background-color: transparent;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges .dropdown .btn-light {
+    background-color: #353a53;
+    border: 1px solid rgba(191, 206, 224, 0.33);
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges .dropdown .btn-light p {
+    color: #ffffff;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges .dropdown .dropdown-menu {
+    background-color: #353a53;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges .dropdown .btn-secondary:not(:disabled):not(.disabled):active,
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges .dropdown .btn-secondary:not(:disabled):not(.disabled).active,
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .ranges .dropdown .show > .btn-secondary.dropdown-toggle {
+    background-color: #353a53;
+    border: 1px solid rgba(191, 206, 224, 0.33);
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table {
+    background-color: #353a53;
+    border: 1px solid transparent;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th {
+    background: transparent;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.month {
+    color: #ffffff;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.next span, body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.prev span {
+    border-color: #ffffff;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr th {
+    color: #ffffff;
+    background: transparent;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td {
+    border: 1px solid #596175;
+    color: #ffffff;
+    background: transparent;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off {
+    background: transparent;
+    color: #aeb1c0;
+    opacity: 1;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off.in-range {
+    background: #565d7d;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.in-range {
+    background: #565d7d;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active {
+    color: #ffffff;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.start-date, body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.end-date {
+    background-color: #2e47ba;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.start-date.off, body[data-sidebar-color='dark'] > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.end-date.off {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(46, 72, 186, 0.5);
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .drp-buttons {
+    background-color: #353a53;
+    border-top: 1px solid #636b81;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .drp-buttons .cancelBtn {
+    background-color: transparent;
+    border: 1px solid #93a6ff;
+    color: #93a6ff;
+  }
+  body[data-sidebar-color='dark'] > .daterangepicker .drp-buttons .applyBtn {
+    background: #2e47ba;
+    border: 1px solid #2e47ba;
+  }
+}
+/*# sourceMappingURL=atoms-dark.css.map */

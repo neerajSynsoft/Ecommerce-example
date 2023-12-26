@@ -1,31 +1,12 @@
-<script setup>
+<script lang="ts" setup>
+import type { Product } from '@/types/product.interface';
+definePageMeta({
+    middleware: 'auth'
+})
 const route = useRoute()
 const active = useState('active', () => "description")
-console.log(route.params.id)
-console.log('active===', active);
-const product = {
-  "_id": "65800df2f3fee4c8664428ce",
-  "title": "iPhone 9",
-  "description": "An apple mobile which is nothing like apple",
-  "price": 549,
-  "discountPercentage": 12.96,
-  "rating": 2.69,
-  "stock": 94,
-  "reviews": 125,
-  "category": "smartphones",
-  "varient": { "Ram": ['6GB', '8GB', '16GB'], "Storage": ['64GB', '128GB', '256GB'] },
-  "brand": "Apple",
-  "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-  "images": [
-    "https://i.dummyjson.com/data/products/1/1.jpg",
-    "https://i.dummyjson.com/data/products/1/2.jpg",
-    "https://i.dummyjson.com/data/products/1/3.jpg",
-    "https://i.dummyjson.com/data/products/1/4.jpg",
-    "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-    "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-  ],
-  "__v": 0
-}
+const { data: product } = await useFetch<Product>(`http://localhost:8080/api/products/${route.params.id}`)
+
 </script>
 
 <style>
@@ -54,7 +35,7 @@ const product = {
   <section class="py-3 sm:py-5">
     <div class="container mx-auto px-4">
 
-      <div class="lg:col-gap-12 xl:col-gap-16 mt-4 grid grid-cols-1 gap-12 lg:mt-6 lg:grid-cols-5 lg:gap-16">
+      <div v-if="product" class="lg:col-gap-12 xl:col-gap-16 mt-4 grid grid-cols-1 gap-12 lg:mt-6 lg:grid-cols-5 lg:gap-16">
         <div class="lg:col-span-3 lg:row-end-1">
           <div class="lg:flex lg:items-start">
             <div class="lg:order-2 lg:ml-5">
@@ -62,7 +43,6 @@ const product = {
                 <img class="h-full w-full max-w-full object-cover" :src="product.thumbnail" alt="" />
               </div>
             </div>
-
             <div class="mt-2 w-full lg:order-1 lg:w-32 lg:flex-shrink-0">
               <div v-for="(image, index) in product?.images?.slice(0, 3)" :key="image + index"
                 class="flex flex-row items-start lg:flex-col">
@@ -82,15 +62,21 @@ const product = {
             <div class="Stars" :style="`--rating: ${product.rating}`"
               aria-label="Rating of this product is {{ product.rating }} out of 5."></div>
             <p class="ml-2 text-sm font-medium text-gray-500">{{ product.reviews }} Reviews</p>
+            <button type="button" class="ml-auto text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-xs p-2.5 text-center inline-flex items-center">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+              <path d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 0 0 0-3.331-1.06A24.859 24.859 0 0 1 6 6.8v9.586h.114C8.223 16.969 11.015 18 13.6 18c1.4 0 1.592-.526 1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z"/>
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
           </div>
 
-          <template v-if="product && product?.varient" v-for="(options, key) in product.varient" :key="key">
+          <template v-if="product && product?.variant" v-for="(options, key) in product.variant" :key="key">
             <h2 class="mt-4 text-base text-gray-900">{{ key }}</h2>
             <div class="mt-[4px] flex select-none flex-wrap items-center gap-1">
               <label v-for="option in options" :key="option" class="">
                 <input type="radio" name="type" :value="option" class="peer sr-only" />
                 <p
-                  class="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">
+                  class="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-4 py-1 font-bold">
                   {{ option }}</p>
               </label>
             </div>
@@ -167,10 +153,10 @@ const product = {
             <div class="mb-12 md:mb-0">
               <div class="mb-6 flex justify-center">
                 <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                  class="w-32 rounded-full shadow-lg" />
               </div>
               <h5 class="mb-4 text-xl font-semibold">Maria Smantha</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-500">
+              <h6 class="mb-4 font-semibold text-primary">
                 Web Developer
               </h6>
               <p class="mb-4">
@@ -187,10 +173,10 @@ const product = {
             <div class="mb-12 md:mb-0">
               <div class="mb-6 flex justify-center">
                 <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                  class="w-32 rounded-full shadow-lg" />
               </div>
               <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-500">
+              <h6 class="mb-4 font-semibold text-primary">
                 Graphic Designer
               </h6>
               <p class="mb-4">
@@ -209,13 +195,13 @@ const product = {
             <div class="mb-0">
               <div class="mb-6 flex justify-center">
                 <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                  class="w-32 rounded-full shadow-lg" />
               </div>
               <h5 class="mb-4 text-xl font-semibold">John Smith</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-400">
+              <h6 class="mb-4 font-semibold text-primary">
                 Marketing Specialist
               </h6>
-              <p class="mb-4 text-neutral-600 dark:text-neutral-300">
+              <p class="mb-4 text-neutral-600">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2"
                   viewBox="0 0 24 24">
                   <path
@@ -231,13 +217,13 @@ const product = {
             <div class="mb-0">
               <div class="mb-6 flex justify-center">
                 <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                  class="w-32 rounded-full shadow-lg" />
               </div>
               <h5 class="mb-4 text-xl font-semibold">John Smith</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-400">
+              <h6 class="mb-4 font-semibold text-primary">
                 Marketing Specialist
               </h6>
-              <p class="mb-4 text-neutral-600 dark:text-neutral-300">
+              <p class="mb-4 text-neutral-600">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2"
                   viewBox="0 0 24 24">
                   <path
@@ -253,13 +239,13 @@ const product = {
             <div class="mb-0">
               <div class="mb-6 flex justify-center">
                 <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
-                  class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                  class="w-32 rounded-full shadow-lg" />
               </div>
               <h5 class="mb-4 text-xl font-semibold">John Smith</h5>
-              <h6 class="mb-4 font-semibold text-primary dark:text-primary-400">
+              <h6 class="mb-4 font-semibold text-primary">
                 Marketing Specialist
               </h6>
-              <p class="mb-4 text-neutral-600 dark:text-neutral-300">
+              <p class="mb-4 text-neutral-600">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2"
                   viewBox="0 0 24 24">
                   <path
@@ -273,6 +259,11 @@ const product = {
             </div>
           </div>
 
+        </div>
+      </div>
+      <div v-else class="lg:col-gap-12 xl:col-gap-16 mt-4 grid grid-cols-1 gap-12 lg:mt-6 lg:grid-cols-5 lg:gap-16">
+        <div class="lg:col-span-2 lg:row-span-2 lg:row-end-2">
+          <h1 class="sm: text-2xl font-bold text-gray-900 sm:text-3xl">Product Description Not Avaliable</h1>
         </div>
       </div>
     </div>

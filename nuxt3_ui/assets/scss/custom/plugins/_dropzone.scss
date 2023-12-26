@@ -1,0 +1,68 @@
+//
+// dropzone.scss
+//
+@import "vue2-dropzone/dist/vue2Dropzone.min.css";
+
+.vue-dropzone {
+    // border: 2px dashed rgba(50, 58, 70, 0.3) !important;
+    background: #F6F8FC !important;
+    border: 1.5px dashed #BCCADC !important;
+    border-radius: 12px !important;
+    &:hover {
+      background: $input-bg;
+    }
+  }
+  
+
+.dropzone {
+  // border: 2px dashed $input-border-color;
+  // background: $input-bg;
+  // border-radius: 6px;
+  background: #F6F8FC !important;
+  border: 1.5px dashed #BCCADC !important;
+  border-radius: 12px !important;
+  cursor: pointer;
+  min-height: 150px;
+  padding: 30px;
+  box-shadow: $components-shadow-sm;
+
+  .dz-message {
+      text-align: center;
+      margin: 2rem 0;
+  }
+  &.dz-started {
+      .dz-message {
+          display: none;
+      }
+  }
+  .text-sm.upload-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #203551;
+    margin: 20px 0 5px;
+  }
+  .upload-text-grey {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #6C7E95;
+  }
+}
+
+body {
+  &[data-sidebar-color="dark"] {
+    .vue-dropzone,
+    .dropzone {
+      background-color: transparent !important;
+      
+      .text-sm.upload-text {
+        color: #fff;
+      }
+    }
+  }
+}

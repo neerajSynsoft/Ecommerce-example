@@ -1,0 +1,2597 @@
+body > .vs-select__options.vs-component--primary .vs-select__option .vs-checkbox-content .vs-checkbox-con .vs-checkbox-mask .vs-icon-check span {
+  -webkit-transform: rotate(223deg);
+          transform: rotate(223deg);
+  width: 0;
+  height: 0;
+  margin-top: 4px;
+}
+
+.pp-button-blue--fill {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #2e47ba;
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+.pp-button-blue--fill.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-blue--fill img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-blue--fill span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-blue--fill[disabled], .pp-button-blue--fill:disabled {
+  cursor: default;
+}
+
+.pp-button-blue--fill span {
+  color: #ffffff;
+}
+
+.pp-button-blue--border {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #2e47ba;
+  background-color: transparent;
+  color: #2e47ba;
+}
+
+.pp-button-blue--border.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-blue--border img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-blue--border span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-blue--border[disabled], .pp-button-blue--border:disabled {
+  cursor: default;
+}
+
+.pp-button-blue--border span {
+  color: #2e47ba;
+  background-color: transparent;
+}
+
+.pp-button-white--fill {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #6c7e95;
+}
+
+.pp-button-white--fill.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-white--fill img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-white--fill span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-white--fill[disabled], .pp-button-white--fill:disabled {
+  cursor: default;
+}
+
+.pp-button-white--fill span {
+  color: #6c7e95;
+}
+
+.pp-button-white--border {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #e7edf4;
+  background-color: #ffffff;
+  color: #6c7e95;
+}
+
+.pp-button-white--border.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-white--border img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-white--border span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-white--border[disabled], .pp-button-white--border:disabled {
+  cursor: default;
+}
+
+.pp-button-white--border span {
+  color: #6c7e95;
+}
+
+.pp-button-white--border-dash {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px dashed #e7edf4;
+  background-color: #ffffff;
+  color: #6c7e95;
+}
+
+.pp-button-white--border-dash.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-white--border-dash img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-white--border-dash span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-white--border-dash[disabled], .pp-button-white--border-dash:disabled {
+  cursor: default;
+}
+
+.pp-button-white--border-dash span {
+  white-space: nowrap;
+  color: #6c7e95;
+}
+
+.pp-button-red--fill {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #E62424;
+  background-color: #E62424;
+  color: #ffffff;
+}
+
+.pp-button-red--fill.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-red--fill img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-red--fill span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-red--fill[disabled], .pp-button-red--fill:disabled {
+  cursor: default;
+}
+
+.pp-button-red--fill span {
+  color: #ffffff;
+}
+
+.pp-button-green--fill {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #54B827;
+  background-color: #54B827;
+  color: #ffffff;
+}
+
+.pp-button-green--fill.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-green--fill img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-green--fill span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-green--fill[disabled], .pp-button-green--fill:disabled {
+  cursor: default;
+}
+
+.pp-button-green--fill span {
+  color: #ffffff;
+}
+
+.pp-button-purple--border {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: #93a6ff;
+  border: 1px solid #93a6ff;
+}
+
+.pp-button-purple--border.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-button-purple--border img {
+  margin: 0;
+  display: block;
+}
+
+.pp-button-purple--border span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-button-purple--border[disabled], .pp-button-purple--border:disabled {
+  cursor: default;
+}
+
+.pp-button-purple--border span {
+  color: #93a6ff;
+}
+
+.pp-btn-blue .vs-button__content {
+  cursor: pointer;
+  background-color: #2e47ba;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  min-height: 40px;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.pp-btn-border-blue {
+  cursor: pointer;
+  background-color: transparent !important;
+}
+
+.pp-btn-border-blue .vs-button__content {
+  border: 1px solid #2e47ba;
+  border-radius: 8px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 40px;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #2e47ba;
+}
+
+.pp-btn-border-blue .vs-button__content span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: #2e47ba;
+  background-color: transparent;
+}
+
+.pp-btn-send-follow-up {
+  min-width: 160px;
+}
+
+.pp-link-border-blue {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 40px;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #2e47ba;
+  background-color: transparent;
+  border: 1px solid #2e47ba;
+  border-radius: 8px;
+}
+
+.pp-link-border-blue:hover {
+  color: #2e47ba;
+}
+
+.pp-link-border-blue button {
+  padding: 0;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #2e47ba;
+  background-color: transparent;
+  border: 0;
+}
+
+.pp-btn-white {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  padding: 8px 18px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+          box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+}
+
+.pp-btn-white span {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #6c7e95;
+}
+
+.pp-btn-tutorial {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+          box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+  border-radius: 8px;
+  width: 104px;
+  min-height: 40px;
+  padding: 8px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #2e47ba;
+  cursor: pointer;
+}
+
+.pp-btn-border-white {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  padding: 8px 18px;
+  background-color: transparent;
+  border: 1px solid #e7edf4;
+  border-radius: 8px;
+}
+
+.pp-btn-border-white span {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #6c7e95;
+}
+
+.pp-btn-filter-dropdown .btn-secondary.dropdown-toggle {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  padding: 8px 18px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #e7edf4 !important;
+  border-radius: 8px;
+}
+
+.pp-btn-filter-dropdown .btn-secondary.dropdown-toggle img {
+  width: 20px;
+  height: 20px;
+}
+
+.pp-btn-filter-dropdown .btn-secondary.dropdown-toggle span {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #6c7e95;
+}
+
+.pp-btn-filter-dropdown .btn-secondary.dropdown-toggle:hover, .pp-btn-filter-dropdown .btn-secondary.dropdown-toggle:focus, .pp-btn-filter-dropdown .btn-secondary.dropdown-toggle:active {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.pp-btn-filter-dropdown.show .btn-secondary.dropdown-toggle {
+  background-color: transparent;
+}
+
+.pp-btn-border-icon-white button {
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+}
+
+.pp-btn-border-icon-white button img {
+  display: block;
+  margin: 0;
+}
+
+.pp-btn-border-icon-white button:hover {
+  border-color: #ffffff;
+}
+
+.pp-btn-dots button {
+  padding: 10px;
+}
+
+.pp-btn-border-blue-icon {
+  display: block;
+  width: 27px;
+  height: 27px;
+  padding: 4px 0;
+  text-align: center;
+  border: 1px solid #D3DEED;
+  border-radius: 50%;
+}
+
+.pp-btn-border-blue-icon i {
+  font-size: 18px;
+  line-height: 1;
+  color: #6C7E95;
+}
+
+.pp-popover {
+  border: 1px solid #203551 !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  background-color: #203551;
+  border-radius: 8px;
+}
+
+.pp-popover ul li:hover {
+  background-color: #2f4665 !important;
+  border-radius: 8px;
+}
+
+.pp-popover.bs-popover-top .arrow::before, .pp-popover.bs-popover-top .arrow::after {
+  border-top-color: #203551;
+}
+
+.pp-popover.bs-popover-bottom .arrow::before, .pp-popover.bs-popover-bottom .arrow::after {
+  border-bottom-color: #203551;
+}
+
+.pp-popover.bs-popover-right .arrow::before, .pp-popover.bs-popover-right .arrow::after {
+  border-right-color: #203551;
+}
+
+.pp-popover.bs-popover-left .arrow::before, .pp-popover.bs-popover-left .arrow::after {
+  border-left-color: #203551;
+}
+
+.pp-popover.bs-popover-right .arrow::before, .pp-popover.bs-popover-right .arrow::after {
+  border-right-color: #203551;
+}
+
+.pp-dropdown.dropdown.b-dropdown ul {
+  margin: 16px 0 0;
+  padding: 10px 5px;
+  background-color: #203551;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  border-radius: 12px;
+}
+
+.pp-dropdown.dropdown.b-dropdown.dropleft ul {
+  margin: 0;
+}
+
+.pp-dropdown.dropdown.b-dropdown ul:before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 16px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #203551;
+  border-left: 8px solid transparent;
+}
+
+.pp-dropdown.dropdown.b-dropdown.dropleft ul:before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: -16px;
+  left: auto;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #203551;
+}
+
+.pp-dropdown.dropdown.b-dropdown ul a {
+  padding: 10px 15px;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.pp-dropdown.dropdown.b-dropdown ul a:hover {
+  color: #ffffff;
+  background-color: #2f4665;
+}
+
+.pp-dropdown.dropdown.b-dropdown ul a span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+}
+
+.pp-dropdown.popover.b-popover {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pp-dropdown.popover.b-popover .arrow {
+  display: none;
+}
+
+.pp-dropdown.popover.b-popover .popover-body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+}
+
+.pp-dropdown.popover.b-popover.bs-popover-left .popover-body {
+  padding: 0 16px 0 0;
+}
+
+.pp-dropdown.popover.b-popover.bs-popover-right .popover-body {
+  padding: 0 0 0 16px;
+}
+
+.pp-dropdown.popover.b-popover ul {
+  margin: 0;
+  padding: 10px 5px;
+  list-style-type: none;
+  background-color: #203551;
+  border-radius: 12px;
+}
+
+.pp-dropdown.popover.b-popover.bs-popover-left ul:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #203551;
+}
+
+.pp-dropdown.popover.b-popover.bs-popover-right ul:before {
+  content: '';
+  position: absolute;
+  top: 42px;
+  right: auto;
+  left: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #203551;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.pp-dropdown.popover.b-popover ul li {
+  padding: 0;
+  cursor: pointer;
+}
+
+.pp-dropdown.popover.b-popover ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.pp-dropdown.popover.b-popover ul li a .popover-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: block;
+}
+
+.pp-dropdown.popover.b-popover ul li a .popover-icon.hover {
+  display: none;
+}
+
+.pp-dropdown.popover.b-popover ul li a:hover .popover-icon {
+  display: none;
+}
+
+.pp-dropdown.popover.b-popover ul li a:hover .popover-icon.hover {
+  display: block;
+}
+
+.pp-dropdown.popover.b-popover ul a:hover {
+  background-color: #2f4665;
+}
+
+.pp-dropdown.popover.b-popover ul a span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.pp-dropdown.pp-dropdown-orders.popover.b-popover.bs-popover-right ul:before {
+  top: 20px;
+}
+
+.pp-dropdown.custom-options {
+  top: 58px;
+  padding: 10px 5px;
+  background-color: #203551;
+  border: 0;
+  border-radius: 12px;
+}
+
+.pp-dropdown.custom-options:before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  right: 16px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #203551;
+  border-left: 8px solid transparent;
+}
+
+.pp-dropdown.custom-options .custom-option {
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.pp-dropdown.custom-options .custom-option.active,
+.pp-dropdown.custom-options .custom-option:hover {
+  background-color: #2f4665;
+}
+
+.modal-date-range-picker-open {
+  overflow: hidden;
+}
+
+.pp-daterange-picker.pp-daterange-picker--block {
+  width: 100%;
+  min-width: 100%;
+}
+
+.pp-daterange-picker.pp-daterange-picker--block .reportrange-text {
+  width: 100%;
+  min-width: 100%;
+}
+
+.pp-daterange-picker.pp-daterange-picker--block .reportrange-text .pp-date-range-picker-input {
+  width: 100%;
+  min-width: 100%;
+}
+
+.pp-daterange-picker .reportrange-text {
+  padding: 0 !important;
+  overflow: unset;
+}
+
+.pp-daterange-picker .reportrange-text .pp-date-range-picker-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  height: 40px;
+  padding: 10px 17px;
+}
+
+.pp-daterange-picker .reportrange-text .pp-date-range-picker-input.pp-date-range-picker-input--w-title .pp-date-range-picker-sideleft-group .pickup-date-text {
+  width: auto;
+}
+
+.pp-daterange-picker .reportrange-text .pp-date-range-picker-input.pp-date-range-picker-input--w-border {
+  border: 1px solid #BFCEE0;
+}
+
+.pp-daterange-picker .reportrange-text .pp-date-range-picker-input .pp-date-range-picker-sideleft-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.pp-daterange-picker .reportrange-text .pp-date-range-picker-input .pp-date-range-picker-sideleft-group .pickup-date-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90px;
+  padding-right: 5px;
+}
+
+.pp-daterange-picker .reportrange-text .pp-date-range-picker-input .pp-date-range-picker-sideleft-group .pickup-date-text.pickup-date-text-block {
+  width: 100%;
+}
+
+.pp-daterange-picker .reportrange-text .pp-date-range-picker-input .pp-date-range-picker-sideright-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pp-daterange-picker .daterangepicker {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+          box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+  border-radius: 15px;
+  z-index: 1000;
+  font-size: 15px;
+  line-height: 1em;
+}
+
+.pp-daterange-picker .daterangepicker::before {
+  border: 0;
+}
+
+.pp-daterange-picker .daterangepicker.opensleft {
+  left: auto;
+  right: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 140px 1fr;
+      grid-template-columns: 140px 1fr;
+  gap: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .ranges {
+  background-color: #f6f8fc;
+  margin: 0;
+  padding-top: 19px;
+  border-right: 1px solid #e2e8f0;
+  border-radius: 15px 0 0 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .ranges ul {
+  margin: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .ranges ul li {
+  padding: 11px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #6c7e95;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .ranges ul li:hover, .pp-daterange-picker .daterangepicker .calendars .ranges ul li.active {
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 27px;
+  border-radius: 0 15px 0 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar {
+  padding: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table {
+  border-collapse: separate;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.month {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: #203551;
+  cursor: default;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr th {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #203551;
+  border: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td {
+  border: 1px solid #ced9e7;
+  border-style: none solid solid none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #203551;
+  border-radius: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td:first-child {
+  border-left-style: solid;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td:first-child.off {
+  border-left-style: solid;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.weekend {
+  color: #f36565;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off {
+  color: rgba(108, 126, 149, 0.5);
+  opacity: 1;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off.in-range {
+  background-color: rgba(235, 244, 248, 0.5);
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active {
+  color: #ffffff;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.start-date, .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.end-date {
+  background-color: #2e47ba;
+  border-radius: 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.start-date.off, .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.end-date.off {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(46, 72, 186, 0.5);
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:first-child {
+  height: 40px;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) {
+  border-radius: 8px 8px 0 0;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) td {
+  border-top-style: solid;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) td:first-child {
+  border-top-left-radius: 8px;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) td:last-child {
+  border-top-right-radius: 8px;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar.left {
+  border: 0 !important;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar.left table thead tr th.next {
+  visibility: hidden;
+}
+
+.pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar.right table thead tr th.prev {
+  visibility: hidden;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons {
+  clear: both;
+  text-align: right;
+  padding: 11px 20px 8px;
+  border-top: 1px solid #e2e8f0;
+  line-height: 12px;
+  vertical-align: middle;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 15px;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .drp-selected {
+  display: none;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons button {
+  min-width: 160px;
+  min-height: 40px;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:hover, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:active, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:focus {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #2e47ba;
+  background-color: transparent;
+  color: #2e47ba;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn.pp-button-w-100, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:hover.pp-button-w-100, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:active.pp-button-w-100, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:focus.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn img, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:hover img, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:active img, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:focus img {
+  margin: 0;
+  display: block;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn span, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:hover span, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:active span, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:focus span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:disabled, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:hover[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:hover:disabled, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:active[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:active:disabled, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:focus[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:focus:disabled {
+  cursor: default;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn span, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:hover span, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:active span, .pp-daterange-picker .daterangepicker .drp-buttons .cancelBtn:focus span {
+  color: #2e47ba;
+  background-color: transparent;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .applyBtn, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:hover, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:active, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:focus {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #2e47ba;
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .applyBtn.pp-button-w-100, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:hover.pp-button-w-100, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:active.pp-button-w-100, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:focus.pp-button-w-100 {
+  width: 100%;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .applyBtn img, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:hover img, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:active img, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:focus img {
+  margin: 0;
+  display: block;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .applyBtn span, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:hover span, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:active span, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:focus span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .applyBtn[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:disabled, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:hover[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:hover:disabled, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:active[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:active:disabled, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:focus[disabled], .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:focus:disabled {
+  cursor: default;
+}
+
+.pp-daterange-picker .daterangepicker .drp-buttons .applyBtn span, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:hover span, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:active span, .pp-daterange-picker .daterangepicker .drp-buttons .applyBtn:focus span {
+  color: #ffffff;
+}
+
+body > .daterangepicker {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+          box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+  border-radius: 15px;
+  z-index: 1000;
+  font-size: 15px;
+  line-height: 1em;
+}
+
+body > .daterangepicker::before {
+  border: 0;
+}
+
+body > .daterangepicker.opensleft {
+  left: auto;
+  right: 0;
+}
+
+body > .daterangepicker .calendars {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 140px 1fr;
+      grid-template-columns: 140px 1fr;
+  gap: 0;
+}
+
+body > .daterangepicker .calendars .ranges {
+  background-color: #f6f8fc;
+  margin: 0;
+  padding-top: 19px;
+  border-right: 1px solid #e2e8f0;
+  border-radius: 15px 0 0 0;
+}
+
+body > .daterangepicker .calendars .ranges ul {
+  margin: 0;
+}
+
+body > .daterangepicker .calendars .ranges ul li {
+  padding: 11px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #6c7e95;
+}
+
+body > .daterangepicker .calendars .ranges ul li:hover, body > .daterangepicker .calendars .ranges ul li.active {
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+body > .daterangepicker .calendars .calendars-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 27px;
+  border-radius: 0 15px 0 0;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar {
+  padding: 0;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 0;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table {
+  border-collapse: separate;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table thead tr th.month {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: #203551;
+  cursor: default;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr th {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #203551;
+  border: 0;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td {
+  border: 1px solid #ced9e7;
+  border-style: none solid solid none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #203551;
+  border-radius: 0;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td:first-child {
+  border-left-style: solid;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td:first-child.off {
+  border-left-style: solid;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.weekend {
+  color: #f36565;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off {
+  color: rgba(108, 126, 149, 0.5);
+  opacity: 1;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.off.in-range {
+  background-color: rgba(235, 244, 248, 0.5);
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active {
+  color: #ffffff;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.start-date, body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.end-date {
+  background-color: #2e47ba;
+  border-radius: 0;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.start-date.off, body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr td.active.end-date.off {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(46, 72, 186, 0.5);
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:first-child {
+  height: 40px;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) {
+  border-radius: 8px 8px 0 0;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) td {
+  border-top-style: solid;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) td:first-child {
+  border-top-left-radius: 8px;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:nth-child(2) td:last-child {
+  border-top-right-radius: 8px;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar .calendar-table table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar.left {
+  border: 0 !important;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar.left table thead tr th.next {
+  visibility: hidden;
+}
+
+body > .daterangepicker .calendars .calendars-container .drp-calendar.right table thead tr th.prev {
+  visibility: hidden;
+}
+
+body > .daterangepicker .drp-buttons {
+  clear: both;
+  text-align: right;
+  padding: 11px 20px 8px;
+  border-top: 1px solid #e2e8f0;
+  line-height: 12px;
+  vertical-align: middle;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 15px;
+}
+
+body > .daterangepicker .drp-buttons .drp-selected {
+  display: none;
+}
+
+body > .daterangepicker .drp-buttons button {
+  min-width: 160px;
+  min-height: 40px;
+}
+
+body > .daterangepicker .drp-buttons .cancelBtn, body > .daterangepicker .drp-buttons .cancelBtn:hover, body > .daterangepicker .drp-buttons .cancelBtn:active, body > .daterangepicker .drp-buttons .cancelBtn:focus {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #2e47ba;
+  background-color: transparent;
+  color: #2e47ba;
+}
+
+body > .daterangepicker .drp-buttons .cancelBtn.pp-button-w-100, body > .daterangepicker .drp-buttons .cancelBtn:hover.pp-button-w-100, body > .daterangepicker .drp-buttons .cancelBtn:active.pp-button-w-100, body > .daterangepicker .drp-buttons .cancelBtn:focus.pp-button-w-100 {
+  width: 100%;
+}
+
+body > .daterangepicker .drp-buttons .cancelBtn img, body > .daterangepicker .drp-buttons .cancelBtn:hover img, body > .daterangepicker .drp-buttons .cancelBtn:active img, body > .daterangepicker .drp-buttons .cancelBtn:focus img {
+  margin: 0;
+  display: block;
+}
+
+body > .daterangepicker .drp-buttons .cancelBtn span, body > .daterangepicker .drp-buttons .cancelBtn:hover span, body > .daterangepicker .drp-buttons .cancelBtn:active span, body > .daterangepicker .drp-buttons .cancelBtn:focus span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+body > .daterangepicker .drp-buttons .cancelBtn[disabled], body > .daterangepicker .drp-buttons .cancelBtn:disabled, body > .daterangepicker .drp-buttons .cancelBtn:hover[disabled], body > .daterangepicker .drp-buttons .cancelBtn:hover:disabled, body > .daterangepicker .drp-buttons .cancelBtn:active[disabled], body > .daterangepicker .drp-buttons .cancelBtn:active:disabled, body > .daterangepicker .drp-buttons .cancelBtn:focus[disabled], body > .daterangepicker .drp-buttons .cancelBtn:focus:disabled {
+  cursor: default;
+}
+
+body > .daterangepicker .drp-buttons .cancelBtn span, body > .daterangepicker .drp-buttons .cancelBtn:hover span, body > .daterangepicker .drp-buttons .cancelBtn:active span, body > .daterangepicker .drp-buttons .cancelBtn:focus span {
+  color: #2e47ba;
+  background-color: transparent;
+}
+
+body > .daterangepicker .drp-buttons .applyBtn, body > .daterangepicker .drp-buttons .applyBtn:hover, body > .daterangepicker .drp-buttons .applyBtn:active, body > .daterangepicker .drp-buttons .applyBtn:focus {
+  border: 1px transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  border: 1px solid #2e47ba;
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+body > .daterangepicker .drp-buttons .applyBtn.pp-button-w-100, body > .daterangepicker .drp-buttons .applyBtn:hover.pp-button-w-100, body > .daterangepicker .drp-buttons .applyBtn:active.pp-button-w-100, body > .daterangepicker .drp-buttons .applyBtn:focus.pp-button-w-100 {
+  width: 100%;
+}
+
+body > .daterangepicker .drp-buttons .applyBtn img, body > .daterangepicker .drp-buttons .applyBtn:hover img, body > .daterangepicker .drp-buttons .applyBtn:active img, body > .daterangepicker .drp-buttons .applyBtn:focus img {
+  margin: 0;
+  display: block;
+}
+
+body > .daterangepicker .drp-buttons .applyBtn span, body > .daterangepicker .drp-buttons .applyBtn:hover span, body > .daterangepicker .drp-buttons .applyBtn:active span, body > .daterangepicker .drp-buttons .applyBtn:focus span {
+  width: auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+body > .daterangepicker .drp-buttons .applyBtn[disabled], body > .daterangepicker .drp-buttons .applyBtn:disabled, body > .daterangepicker .drp-buttons .applyBtn:hover[disabled], body > .daterangepicker .drp-buttons .applyBtn:hover:disabled, body > .daterangepicker .drp-buttons .applyBtn:active[disabled], body > .daterangepicker .drp-buttons .applyBtn:active:disabled, body > .daterangepicker .drp-buttons .applyBtn:focus[disabled], body > .daterangepicker .drp-buttons .applyBtn:focus:disabled {
+  cursor: default;
+}
+
+body > .daterangepicker .drp-buttons .applyBtn span, body > .daterangepicker .drp-buttons .applyBtn:hover span, body > .daterangepicker .drp-buttons .applyBtn:active span, body > .daterangepicker .drp-buttons .applyBtn:focus span {
+  color: #ffffff;
+}
+
+.pp-date-picker .mx-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent !important;
+  min-height: 40px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  border: 1px solid #bfcee0 !important;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 138%;
+  letter-spacing: 0.02em;
+  color: #6c7e95 !important;
+}
+
+body > .pp-date-picker-popup {
+  border-radius: 8px;
+}
+
+body > .pp-date-picker-popup .mx-calendar {
+  padding: 25px 20px;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-btn-icon-double-left,
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-btn-icon-double-right {
+  display: none;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-icon-left::before, body > .pp-date-picker-popup .mx-calendar .mx-calendar-header .mx-icon-right::before {
+  border-color: #203551;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table {
+  border-collapse: separate;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table thead tr th {
+  font-weight: 500;
+  color: #203551;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr:first-child td {
+  border-top-style: solid;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr:first-child td:first-child {
+  border-top-left-radius: 8px;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr:first-child td:last-child {
+  border-top-right-radius: 8px;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td {
+  border: 1px solid #ced9e7;
+  border-style: none solid solid none;
+  color: #203551;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.not-current-month, body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.disabled {
+  color: rgba(32, 53, 81, 0.5);
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.active, body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td.today {
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child {
+  border-left-style: solid;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child, body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child {
+  color: #f36565;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.active, body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.active {
+  background-color: #2e47ba;
+  color: #ffffff;
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.disabled, body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.disabled {
+  color: rgba(32, 53, 81, 0.5);
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.not-current-month, body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.not-current-month {
+  color: rgba(243, 101, 101, 0.5);
+}
+
+body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:first-child.not-current-month.disabled, body > .pp-date-picker-popup .mx-calendar .mx-calendar-content table tbody tr td:last-child.not-current-month.disabled {
+  color: rgba(32, 53, 81, 0.5);
+}
+
+.pp-modal-vuesax .vs-dialog__close {
+  top: 25px;
+  right: 25px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.pp-modal-vuesax .vs-dialog__close:hover {
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+.pp-modal-vuesax .vs-dialog__close i {
+  width: 20px;
+  height: 20px;
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content {
+  padding: 0 !important;
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container {
+  padding: 25px;
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container hr {
+  margin: 20px 0;
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__header h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #203551;
+  margin: 0;
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 20;
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer .btn-width {
+  min-width: 160px;
+}
+
+@media (max-width: 575px) {
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer .btn-width {
+    min-width: auto;
+  }
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer .btn-width-120 {
+  min-width: 120px;
+}
+
+@media (max-width: 575px) {
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer .btn-width-120 {
+    min-width: auto;
+  }
+}
+
+.pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .vs-table .vs-table__thead .vs-table__th {
+  border-radius: 0 !important;
+}
+
+.pp-main-content {
+  padding: 30px 18px 30px 30px;
+}
+
+.pp-page-title {
+  padding: 0;
+}
+
+.pp-page-title > .flex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pp-draggable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+.pp-draggable .pp-draggable__button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  padding: 10px 15px;
+  border: 1px solid #E7EDF4;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.pp-input-vuesax.pp-input-vuesax--no-border .vs-input {
+  border: 1px solid transparent;
+}
+
+@media (max-width: 1024px) {
+  .pp-daterange-picker .daterangepicker {
+    position: fixed;
+    z-index: 99999 !important;
+    top: unset !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: unset !important;
+    width: 100% !important;
+    border-radius: 15px;
+    max-width: none;
+    padding: 0;
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 1em;
+    width: 100%;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .pp-daterange-picker .daterangepicker::before {
+    border: none !important;
+  }
+  .pp-daterange-picker .daterangepicker.openscenter {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .pp-daterange-picker .daterangepicker .drp-header {
+    padding: 20px 20px 0 20px;
+  }
+  .pp-daterange-picker .daterangepicker .drp-header .drp-header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pp-daterange-picker .daterangepicker .drp-header .drp-header-container h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #203551;
+  }
+  .pp-daterange-picker .daterangepicker .calendars {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .ranges {
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .btn-light {
+    background-color: #ffffff;
+    border: 1px solid #e7edf4;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 40px;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .btn-light p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #6c7e95;
+    margin: 0;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .dropdown-menu {
+    background-color: #ffffff;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .btn-secondary:not(:disabled):not(.disabled):active,
+  .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .btn-secondary:not(:disabled):not(.disabled).active,
+  .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown .show > .btn-secondary.dropdown-toggle {
+    background-color: #ffffff;
+    border: 1px solid #e7edf4;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .ranges .dropdown ul {
+    width: 100%;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .calendars-container {
+    width: 100%;
+    max-height: 340px;
+    overflow-y: auto;
+  }
+  .pp-daterange-picker .daterangepicker .calendars .calendars-container .drp-calendar {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .pp-daterange-picker .daterangepicker .drp-buttons {
+    text-align: center;
+    padding: 20px;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .pp-daterange-picker .daterangepicker .drp-buttons button {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  body > .daterangepicker {
+    position: fixed;
+    z-index: 99999;
+    top: auto !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100% !important;
+    height: 100%;
+    border: none;
+    max-width: none;
+    padding: 0;
+    margin-top: 0;
+    background-color: rgba(50, 58, 70, 0.5) !important;
+    border-radius: 0;
+  }
+  body > .daterangepicker::before, body > .daterangepicker::after {
+    content: '';
+    border: none !important;
+    border-bottom-color: transparent !important;
+  }
+  body > .daterangepicker.openscenter {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  body > .daterangepicker.openscenter::before {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0;
+  }
+  body > .daterangepicker .drp-header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #e0e9f4;
+    border-radius: 15px 15px 0 0;
+  }
+  body > .daterangepicker .drp-header .drp-header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body > .daterangepicker .drp-header .drp-header-container h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #203551;
+  }
+  body > .daterangepicker .calendars {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  body > .daterangepicker .calendars .ranges {
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+  }
+  body > .daterangepicker .calendars .ranges .dropdown .btn-light {
+    background-color: #ffffff;
+    border: 1px solid #e7edf4 !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 40px;
+  }
+  body > .daterangepicker .calendars .ranges .dropdown .btn-light p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #6c7e95;
+    margin: 0;
+  }
+  body > .daterangepicker .calendars .ranges .dropdown .dropdown-menu {
+    background-color: #ffffff;
+  }
+  body > .daterangepicker .calendars .ranges .dropdown .btn-secondary:not(:disabled):not(.disabled):active,
+  body > .daterangepicker .calendars .ranges .dropdown .btn-secondary:not(:disabled):not(.disabled).active,
+  body > .daterangepicker .calendars .ranges .dropdown .show > .btn-secondary.dropdown-toggle {
+    background-color: #ffffff;
+    border: 1px solid #e7edf4;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+  }
+  body > .daterangepicker .calendars .ranges .dropdown ul {
+    width: 100%;
+  }
+  body > .daterangepicker .calendars .calendars-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-height: 340px;
+    overflow-y: auto;
+    padding: 0 20px 20px;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar {
+    padding: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table {
+    border-collapse: separate;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table thead tr th.month {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: #203551;
+    cursor: default;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr th {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 15px !important;
+    color: #203551;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td {
+    border: 1px solid #ced9e7;
+    border-style: none solid solid none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 15px !important;
+    color: #203551;
+    border-radius: 0;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td:first-child {
+    border-left-style: solid;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td:first-child.off {
+    border-left-style: solid;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.weekend {
+    color: #f36565;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.off {
+    color: rgba(108, 126, 149, 0.5);
+    opacity: 1;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.off.in-range {
+    background-color: rgba(235, 244, 248, 0.5);
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.active {
+    color: #ffffff;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.active.start-date, body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.active.end-date {
+    background-color: #2e47ba;
+    border-radius: 0;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.active.start-date.off, body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr td.active.end-date.off {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(46, 72, 186, 0.5);
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:first-child {
+    height: 40px;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:nth-child(2) {
+    border-radius: 8px 8px 0 0;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:nth-child(2) td {
+    border-top-style: solid;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:nth-child(2) td:first-child {
+    border-top-left-radius: 8px;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:nth-child(2) td:last-child {
+    border-top-right-radius: 8px;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar.left {
+    border: 0 !important;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar.left table thead tr th.next {
+    visibility: hidden;
+  }
+  body > .daterangepicker .calendars .calendars-container .drp-calendar.right table thead tr th.prev {
+    visibility: hidden;
+  }
+  body > .daterangepicker .drp-buttons {
+    -webkit-box-shadow: 0px -14px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px -14px 30px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    clear: both;
+    padding: 11px 20px 8px;
+    border-top: 1px solid #e2e8f0;
+    line-height: 12px;
+    text-align: center;
+    padding: 20px;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  body > .daterangepicker .drp-buttons .drp-selected {
+    display: none;
+  }
+  body > .daterangepicker .drp-buttons button.btn {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    min-height: 40px;
+  }
+  body > .daterangepicker .drp-buttons .cancelBtn {
+    background-color: transparent;
+    border: 1px solid #2e47ba;
+    color: #2e47ba;
+  }
+  body > .daterangepicker .drp-buttons .applyBtn {
+    background-color: #2e47ba;
+    border: 1px solid #2e47ba;
+  }
+}
+
+@media (max-width: 767px) {
+  .pp-btn-filter-dropdown .btn {
+    border: 1px solid #e7edf4;
+  }
+}
+
+@media (max-width: 575px) {
+  .pp-main-content {
+    padding: 20px 0;
+  }
+  .pp-page-title {
+    padding: 0 20px;
+  }
+  .pp-page-title h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .pp-page-title > .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .pp-page-title > .flex > .flex {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .pp-page-title > .flex > .flex > * {
+    width: 100%;
+  }
+  body > .pp-date-picker-popup {
+    position: fixed !important;
+    height: 100vh;
+    width: 100%;
+    left: 0 !important;
+    z-index: 999999;
+    border-radius: 0;
+    top: unset !important;
+    bottom: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-transform: none;
+            transform: none;
+    background-color: rgba(0, 0, 0, var(--vs-background-opacity)) !important;
+    -webkit-transition: unset;
+    transition: unset;
+    opacity: 1;
+  }
+  body > .pp-date-picker-popup.mx-zoom-in-down-enter-active, body > .pp-date-picker-popup.mx-zoom-in-down-leave-active {
+    opacity: 0;
+    -webkit-transform: unset;
+            transform: unset;
+    -webkit-transform-origin: unset;
+            transform-origin: unset;
+  }
+  body > .pp-date-picker-popup.mx-zoom-in-down-enter-active .mx-datepicker-content, body > .pp-date-picker-popup.mx-zoom-in-down-leave-active .mx-datepicker-content {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content {
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+    -webkit-transform: none;
+            transform: none;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-datepicker-header {
+    padding: 0;
+    border: 0;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-datepicker-header .pp-date-picker__header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 20px 19px;
+    border-bottom: 1px solid #e0e9f4;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-datepicker-header .pp-date-picker__header-container .pp-date-picker__header-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-datepicker-header .pp-date-picker__header-container .pp-date-picker__header-title h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #203551;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-datepicker-header .pp-date-picker__header-container .pp-date-picker__header-btn-close {
+    justify-self: flex-end;
+    cursor: pointer;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar {
+    padding: 20px 20px 48px;
+    width: 100%;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-header {
+    margin-bottom: 41px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-header .mx-btn-icon-left i::before,
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-header .mx-btn-icon-right i::before {
+    width: 14px;
+    height: 14px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-header .mx-calendar-header-label {
+    font-size: 21.5357px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-header .mx-calendar-header-label button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.5357px;
+    line-height: 26px;
+    color: #203551;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content {
+    height: auto;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table {
+    border-collapse: separate;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table thead tr th {
+    font-weight: 500;
+    font-size: 14.3571px;
+    line-height: 17px;
+    -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+    height: 47px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr:first-child td {
+    border-top-style: solid;
+    height: 47px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr:first-child td:first-child {
+    border-top-left-radius: 8px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr:first-child td:last-child {
+    border-top-right-radius: 8px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td {
+    font-weight: 400;
+    font-size: 14.3571px;
+    line-height: 17px;
+    -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+    border: 1px solid #ced9e7;
+    border-style: none solid solid none;
+    border-radius: 0;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td.not-current-month {
+    color: rgba(32, 53, 81, 0.5);
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td.active {
+    background-color: #2e47ba;
+    color: #ffffff;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td:first-child {
+    border-left-style: solid;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td:first-child, body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td:last-child {
+    color: #f36565;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td:first-child.active, body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td:last-child.active {
+    background-color: #2e47ba;
+    color: #ffffff;
+  }
+  body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td:first-child.not-current-month, body > .pp-date-picker-popup .mx-datepicker-content .mx-calendar .mx-calendar-content table tbody tr td:last-child.not-current-month {
+    color: rgba(243, 101, 101, 0.5);
+  }
+  .pp-modal-vuesax.vs-dialog-content {
+    padding: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog {
+    width: 100% !important;
+    margin: 0;
+    max-width: 100%;
+    border-radius: 12px 12px 0 0 !important;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__close {
+    top: 20px;
+    right: 20px;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container {
+    padding: 0;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container hr {
+    margin: 15px 20px 20px;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container hr.pp-modal-vuesax__line-last {
+    display: none;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container hr.pp-modal-vuesax__line-w-100 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__header {
+    padding: 20px 20px 0;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__header h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__main {
+    max-height: 300px;
+    padding: 0 20px 20px;
+    overflow-y: auto;
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px -14px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px -14px 30px rgba(0, 0, 0, 0.05);
+  }
+  .pp-modal-vuesax.vs-dialog-content .vs-dialog .vs-dialog__content .pp-modal-vuesax__container .pp-modal-vuesax__footer.pp-modal-vuesax__footer-full-width--mobile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .pp-modal-vuesax.vs-dialog-enter {
+    opacity: 1;
+  }
+  .pp-modal-vuesax.vs-dialog-enter .vs-dialog, .pp-modal-vuesax.vs-dialog-leave-to .vs-dialog {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  .pp-modal-vuesax.vs-dialog-enter-active .vs-dialog:not(.vs-dialog--fullScreen) {
+    -webkit-animation: unset;
+    animation: unset;
+  }
+  .pp-modal-bootstrap.modal .modal-dialog {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  .pp-modal-bootstrap.modal.fade.show .modal-dialog {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .pp-draggable {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=atoms.css.map */

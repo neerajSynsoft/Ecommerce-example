@@ -1,5 +1,102 @@
+<script lang="ts" setup>
+import { object, string, ref as yupRef } from "yup";
+import { configure } from "vee-validate";
+type FormFeedbackType = 'invalid' | 'success' | null;
+
+const togglePassword = ref(false);
+const rememberUser = ref(false);
+const formFeedback: Ref<FormFeedbackType> = ref(null);
+
+const existingEmail = async (value: any) => {
+  const result = false //await $fetch("/api/checkemail?email=" + value);
+  return result ? true : false;
+};
+
+const handleSubmit = (values: any, actions: any) => {
+  console.log(values);
+  console.log('remember===', rememberUser);
+  actions.resetForm();
+};
+
+configure({
+  validateOnBlur: true,
+  validateOnChange: true,
+  validateOnInput: false,
+  validateOnModelUpdate: true,
+});
+
+const schema = object({
+  email: string()
+    .required()
+    .email()
+    .test(
+      "email-is-taken",
+      "Email is already taken",
+      async (value: any) => !(await existingEmail(value))
+    )
+    .label("This"),
+  password: string().required().min(8).label("This"),
+});
+
+const initialValues = { email: "", password: "" };
+
+</script>
 <template>
-  <div>
-   <h1>Welcome to the homepage login.vue</h1>
-  </div>
+  <section class="bg-gray-50">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <img class="w-[250px] h-[35px] mr-2 mb-3" src="/formulir-logo.png" alt="logo">
+      <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+          <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+            Sign in to your account
+          </h1>
+          <div v-if="formFeedback == 'invalid'"
+            class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            Email or Password is not correct. Please try again
+          </div>
+          <div v-if="formFeedback == 'success'"
+            class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+            role="alert">
+            Logged in Successfully.
+          </div>
+          <VeeForm class="space-y-4 md:space-y-6" :validation-schema="schema" :initial-values="initialValues"
+            @submit="handleSubmit">
+            <VTextInput type="email" name="email" label="Your email" placeholder="Enter your email" />
+            <div class="relative">
+              <VTextInput :type="togglePassword ? 'text' : 'password'" name="password" label="Password"
+                placeholder="••••••••" />
+              <img v-if="togglePassword == false" @click="() => togglePassword = true"
+                src="~/assets/icons/ic-view-grey.svg" alt=""
+                class="toggle-password w-[18px] h-[18px] absolute right-2 top-9">
+
+              <img v-if="togglePassword === true" @click="() => togglePassword = false"
+                src="~/assets/icons/ic-eye-closed-grey.svg" alt=""
+                class="toggle-password w-[18px] h-[18px] absolute right-2 top-9">
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="rememberUser" name="rememberUser" aria-describedby="rememberUser" type="checkbox"
+                    v-model="rememberUser"
+                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300">
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="rememberUser" class="text-gray-500">Remember me</label>
+                </div>
+              </div>
+              <NuxtLink to="/signup" class="text-sm font-medium text-primary-600 hover:underline">Forgot
+                password?</NuxtLink>
+            </div>
+            <button type="submit"
+              class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign
+              in</button>
+            <p class="text-sm font-light text-gray-500">
+              Don’t have an account yet?<NuxtLink to="/signup" class="font-medium text-primary-600 hover:underline">
+                Sign up</NuxtLink>
+            </p>
+          </VeeForm>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>

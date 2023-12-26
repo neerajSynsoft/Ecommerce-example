@@ -1,0 +1,16 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_29_1685" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+<rect width="50" height="50" rx="25" fill="#DCEDFF"/>
+</mask>
+<g mask="url(#mask0_29_1685)">
+<rect width="50" height="50" rx="25" fill="#DCEDFF"/>
+<path d="M32.1719 12H11.5192L9.70328 38H30.3559L32.1719 12Z" fill="#CC7051"/>
+<path d="M35.417 12H14.7643V38H33.601L35.417 12Z" fill="#EB934E"/>
+<path d="M9.70312 38H19.6124L14.7671 31.4601L9.70312 38Z" fill="#814743"/>
+<path d="M17.7764 12H38.429L40.245 38H19.5923L17.7764 12Z" fill="#F9B66F"/>
+<path d="M31.0674 30.5996H37.1925L37.5215 35.2737H31.3964L31.0674 30.5996Z" fill="white"/>
+<ellipse cx="32.7541" cy="15.2699" rx="1.13496" ry="1.13612" fill="#CC7051"/>
+<ellipse cx="24.3586" cy="15.2699" rx="1.13496" ry="1.13612" fill="#CC7051"/>
+<path d="M24.3584 15.2695V18.0345C24.3584 20.353 26.2379 22.2324 28.5563 22.2324V22.2324C30.8747 22.2324 32.7542 20.353 32.7542 18.0345V15.2695" stroke="white" stroke-linecap="round"/>
+</g>
+</svg>

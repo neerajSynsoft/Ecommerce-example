@@ -1,0 +1,354 @@
+//
+// Datepicker
+//
+@import 'vue2-datepicker/index.css';
+.mx-datepicker {
+    width: 100% !important;
+    font-family: $font-family-base !important;
+}
+
+.mx-input {
+    border-radius: 8px !important;
+    display: block !important;
+    height: $input-height !important;
+    padding: $input-padding-y $input-padding-x !important;
+    font-family: $input-font-family !important;
+    @include font-size($input-font-size);
+    font-weight: $input-font-weight !important;
+    line-height: $input-line-height !important;
+    color: $input-color !important;
+    background-color: #f4f7f8 !important;
+    background-clip: padding-box;
+    border: $input-border-width solid $input-border-color !important;
+    box-shadow: none !important;
+}
+
+.mx-input-wrapper {
+    input {
+        background: white !important;
+    }
+}
+
+.mx-calendar {
+    font-family: $font-family-base !important;
+}
+
+.mx-datepicker-popup {
+    z-index: 999999999999 !important;
+    box-shadow: $box-shadow-lg !important;
+    border: none !important;
+    background-color: lighten($dropdown-bg, 2%) !important;
+}
+
+.mx-panel-date td,
+.mx-panel-date th {
+    border-radius: 30px;
+}
+
+.mx-calendar-content .cell.disabled,
+.inrange {
+    background-color: lighten($gray-200, 2%) !important;
+}
+
+.mx-calendar-content .cell:hover,
+.mx-calendar-content .cell.actived {
+    color: $gray-400;
+}
+
+.mx-shortcuts-wrapper .mx-shortcuts {
+    color: $gray-500 !important;
+}
+
+.datepicker {
+    border: 1px solid $gray-100;
+    padding: 8px;
+    z-index: 999 !important;
+    table {
+        tr {
+            th {
+                font-weight: 500;
+            }
+            td {
+                &.active,
+                &.active:hover,
+                .active.disabled,
+                &.active.disabled:hover,
+                &.today,
+                &.today:hover,
+                &.today.disabled,
+                &.today.disabled:hover,
+                &.selected,
+                &.selected:hover,
+                &.selected.disabled,
+                &.selected.disabled:hover {
+                    background-color: $primary !important;
+                    background-image: none;
+                    box-shadow: none;
+                    color: $white !important;
+                }
+                &.day.focused,
+                &.day:hover,
+                span.focused,
+                span:hover {
+                    background: $gray-200;
+                }
+                &.new,
+                &.old,
+                span.new,
+                span.old {
+                    color: $gray-500;
+                    opacity: 0.6;
+                }
+                &.range,
+                &.range.disabled,
+                &.range.disabled:hover,
+                &.range:hover {
+                    background-color: $gray-300;
+                }
+            }
+        }
+    }
+}
+
+.table-condensed {
+    >thead>tr>th,
+    >tbody>tr>td {
+        padding: 7px;
+    }
+}
+
+.vue-daterange-picker {
+    .daterangepicker {
+        @media screen and (max-width: 560px) {
+            position: relative;
+        }
+    }
+    .daterangepicker .calendar-table td,
+    .daterangepicker .calendar-table th {
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .daterangepicker.show-ranges {
+        min-width: 765px;
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(217, 223, 232, 0.2);
+        @media screen and (max-width: 560px) {
+            box-shadow: none;
+        }
+    }
+    .daterangepicker td.off.in-range {
+        border: 1px solid #ced9e7;
+    }
+    // @media screen and (min-width: 600px) and (max-width: 840px) {
+    @media screen and (max-width: 840px) {
+        .calendars-container {
+            flex-direction: column;
+        }
+        .ranges.col-12.col-md-auto {
+            ul {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+        .daterangepicker.show-ranges {
+            min-width: 486px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .calendars {
+            flex-direction: column;
+        }
+        .daterangepicker.show-ranges {
+            min-width: 300px;
+            position: absolute;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+            z-index: 99;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    }
+    .dashboard-page .daterangepicker .calendar-table td {
+        padding: 0;
+    }
+    .navbar-custom {
+        background: #2e47ba;
+    }
+    .ranges {
+        &-header {
+            display: none;
+            @media screen and (max-width: 800px) {
+                display: block;
+                font-size: 18px;
+            }
+        }
+        &-select {
+            display: none;
+            & .vs__search::placeholder,
+            & .vs__dropdown-toggle,
+            & .vs__dropdown-menu {
+                //background: #dfe5fb;
+                border: 1px solid #bfcee0;
+                box-sizing: border-box;
+                border-radius: 8px;
+                color: #6C7E95;
+            }
+            @media screen and (max-width: 800px) {
+                display: block;
+            }
+        }
+        &-list {
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+    }
+    .daterangepicker {
+        font-family: Inter;
+    }
+    .daterangepicker .ranges li {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #6c7e95;
+        padding: 10px 20px;
+        font-family: Inter;
+        text-transform: capitalize;
+        &:hover {
+            background: #2e47ba;
+            color: #fff;
+        }
+        &.active {
+            background: #2e47ba;
+            color: #fff;
+        }
+    }
+    .daterangepicker .calendar-table th,
+    .daterangepicker .calendar-table td {
+        color: #203551;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        border-radius: 0;
+        padding: 10px;
+        &.active {
+            background-color: #2E47BA !important;
+            color: #fff;
+        }
+    }
+    .daterangepicker td.today {
+        // background: #2e47ba;
+        // color: #fff;
+    }
+    .daterangepicker th.month {
+        font-size: 18px !important;
+        line-height: 23px;
+        color: #2e47ba;
+    }
+    .daterangepicker tbody tr:first-child {
+        border-bottom: 1px solid red;
+    }
+    .daterangepicker tbody tr td {
+        border: none;
+        border: 1px solid #ced9e7;
+        padding: 0 !important;
+    }
+    td:last-child.weekend {
+        color: #f36565 !important;
+    }
+    .calendars-container {
+        padding-bottom: 24px;
+        padding-top: 14px;
+        border-left: 1px solid #e2e8f0;
+        @media screen and (max-width: 800px) {
+            border: none;
+        }
+    }
+    .daterangepicker .drp-calendar {
+        padding-left: 20px;
+        margin: 0;
+    }
+    .daterangepicker.ltr .drp-calendar.left {
+        margin-right: 0;
+        border: none;
+        @media screen and (max-width: 800px) {
+            border-left: none !important;
+        }
+    }
+    .daterangepicker.ltr .drp-calendar.right {
+        padding-right: 20px;
+        @media screen and (max-width: 560px) {
+            padding-right: 0;
+        }
+    }
+    .daterangepicker .drp-calendar {
+        width: 100%;
+        max-width: 100%;
+    }
+    .calendars.row.no-gutters {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+    .daterangepicker.ltr .drp-calendar.left .calendar-table {
+        // padding-right: 5px;
+        padding: 0;
+    }
+    // styles for calendar
+    .daterangepicker .calendar-table tbody th {
+        padding: 0 !important;
+        border-bottom: 1px solid #ced9e7;
+    }
+    .daterangepicker .ranges ul {
+        padding-top: 14px;
+    }
+    .daterangepicker {
+        border: none;
+    }
+    .calendar-table {
+        padding: 0;
+    }
+    // .cancelBtn.btn.btn-sm.btn-secondary {
+    //     background: none;
+    //     border: none;
+    //     color: #2e47ba;
+    //     letter-spacing: 0.02em;
+    //     font-size: 13px;
+    //     line-height: 18px;
+    //     font-weight: 500;
+    //     padding: 0;
+    //     margin-right: 20px;
+    //     @media screen and (max-width: 560px) {
+    //         margin-right: 0;
+    //         margin-top: 20px;
+    //     }
+    // }
+    .daterangepicker.show-calendar .drp-buttons {
+        @media screen and (max-width: 560px) {
+            display: block;
+            display: flex;
+            // flex-direction: column-reverse;
+        }
+        .cancel-b {
+            @media screen and (max-width: 560px) {
+                margin-top: 0px;
+            }
+        }
+    }
+    box-shadow: none;
+}
+
+.vs-dialog__content.notFooter {
+    @media screen and (max-width: 560px) {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ranges-header,
+    .ranges.bgcolor {
+        padding: 0px 10px;
+    }
+}

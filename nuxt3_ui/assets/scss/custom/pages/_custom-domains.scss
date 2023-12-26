@@ -1,0 +1,55 @@
+// 
+// _custom-domains.scss
+// 
+
+@media(max-width: 1199px) {
+  .custom-domains-page {
+    .vs-table-content {
+      overflow: scroll;
+
+      .vs-table {
+        width: 900px;
+    
+        .vs-table__thead {
+          .vs-table__tr {
+            .vs-table__th {
+              &:first-child {
+                width: 360px !important;
+              }
+              &:nth-child(2) {
+                width: 240px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  .custom-domains-page {
+    .vs-table-content {
+      .vs-table {
+        .vs-table__thead {
+          .vs-table__tr {
+            .vs-table__th {
+              &:first-child {
+                max-width: 500px !important;
+                width: 500px !important;
+              }
+              &:nth-child(2) {
+                width: 240px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tracking-buttons {
+      .pp-button-blue--fill {
+        padding: 10px 6px;
+      }
+    }
+  }
+}

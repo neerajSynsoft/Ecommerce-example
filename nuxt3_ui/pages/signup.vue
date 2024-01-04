@@ -61,11 +61,12 @@
                         <div class="bg-blue-50 p-2 px-6">
                             <div class="flex items-start">
                                 <div class="flex items-center h-5">
-                                    <input id="terms" aria-describedby="terms" type="checkbox" v-model="referral"
-                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300">
+                                    <input id="referral" aria-describedby="terms" type="checkbox" v-model="referral"
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
+                                        name="referral">
                                 </div>
                                 <div class="ml-3 text-sm">
-                                    <label for="terms" class="font-light text-gray-500">I have referral code</label>
+                                    <label for="referral" class="font-light text-gray-500">I have referral code</label>
                                 </div>
                             </div>
                             <div v-if="referral" class="mt-2">
@@ -87,7 +88,7 @@
                         </div>
                         <div class="flex items-start px-6">
                             <div class="flex items-center h-5">
-                                <input id="terms" aria-describedby="terms" type="checkbox"
+                                <input id="terms" aria-describedby="terms" type="checkbox" name="terms"
                                     class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300">
                             </div>
                             <div class="ml-3 text-sm">
@@ -116,44 +117,41 @@
 <script lang="ts" setup>
 import { object, string, ref as yupRef } from "yup";
 import { configure } from "vee-validate";
+import commonMessage from "~/constants/message";
 
 const referral = ref(false);
 const togglePassword = ref(false);
 const toggleCPassword = ref(false);
 
-async function submit(values:any) {
-  const res = await $fetch('/api/auth/login', {
-    method: 'post',
-    body: values
-  })
-  console.log('body====',res);
+async function submit(values: any) {
+    const data = {
+        phone: values.phone,
+        name: values.name,
+        email: values.email,
+        password: values.password,
+        monthly_volume: values.monthlyV,
+    }
+    const res = await $fetch('/api/auth/signup', {
+        method: 'post',
+        body: data
+    })
+    console.log('body====', res);
 }
 
-const handleSubmit = (values: any, actions: any) => {
-    console.log(values);
-    submit(values)
+const handleSubmit = async (values: any, actions: any) => {
+    const data = {
+        phone: values.phone,
+        name: values.name,
+        email: values.email,
+        password: values.password,
+        monthly_volume: values.monthlyV,
+    }
+    const res = await $fetch('/api/auth/signup', {
+        method: 'post',
+        body: data
+    })
+    console.log('body====', res);
     // actions.resetForm();
-};
-
-const nameValidator = (value: string) => {
-    const name = value.trim()
-    var isName = /^[a-zA-Z\s]+$/;
-    return name ? !!name.match(isName) : false;
-};
-
-const phoneValidator = (value: string) => {
-    value = value.toString();
-    value = value.replace(/ /g, "");
-    value = value.replace(/-/g, "");
-    value = value.replace(/\(/g, "");
-    value = value.replace(/\)/g, "");
-    var phoneno = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{1,3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
-    return value ? !!value.match(phoneno) : true;
-};
-
-const usernameValidator = (value: string) => {
-    var isUsername = /^[a-z0-9]*$/;
-    return value ? !!value.match(isUsername) : true;
 };
 
 // configure({
@@ -164,27 +162,43 @@ const usernameValidator = (value: string) => {
 // });
 
 const schema = object({
-    name: string().required().min(1).test("is-valid-name", "Name is invalid.", nameValidator).label("This"),
+    name: string()
+        .trim()
+        .required(commonMessage.required)
+        .min(1)
+        .test((value, ctx) => {
+            if (!value.match(/^[a-z]*$/)) {
+                return ctx.createError({ message: commonMessage.invalidName })
+            }
+            return true
+        }),
     email: string()
-        .required()
-        .email()
-        // .test(
-        //   "email-is-taken",
-        //   "Email is already taken",
-        //   async (value: any) => !(await existingEmail(value))
-        // )
-        .label("This"),
-    password: string().required().min(8).label("This"),
-    phone: string().required().min(8).test("is-valid-phone", "Phone is invalid.", phoneValidator).label("This"),
+        .trim()
+        .required(commonMessage.required)
+        .email(commonMessage.invalidEmail),
+    // .test(
+    //   "email-is-taken",
+    //   "Email is already taken",
+    //   async (value: any) => !(await existingEmail(value))
+    // ),
+    password: string().required(commonMessage.required).min(8, commonMessage.passwordMin),
+    phone: string()
+        .required(commonMessage.required)
+        .min(8)
+        .test((value, ctx) => {
+            if (!value.match(/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{1,3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/)) {
+                return ctx.createError({ message: commonMessage.invalidPhone })
+            }
+            return true
+        }),
     // monthlyV: string().required().min(8).label("This"),
-    referralCode: string().required().label("This"),
+    // referralCode: string().required().label("This"),
     confirmPassword: string()
-        .required()
-        .oneOf([yupRef("password")], "Passwords do not match")
-        .label("This"),
+        .required(commonMessage.required)
+        .oneOf([yupRef("password")], commonMessage.passwordConfirm),
 });
 
-const initialValues = { name: "", email: "", password: "", phone: "", monthlyV: "", confirmPassword: "" };
+const initialValues = { name: "", email: "", password: "", phone: "", monthlyV: "<100", confirmPassword: "" };
 definePageMeta({
     layout: false,
 });

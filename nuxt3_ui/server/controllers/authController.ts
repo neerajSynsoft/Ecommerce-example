@@ -22,3 +22,5 @@ const handler = async (event:any) => {
 
 // Export the event handler
 export default defineEventHandler(handler);
+
+

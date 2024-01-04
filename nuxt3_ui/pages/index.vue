@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { useTodosStore } from '~/store/todos';
-import { storeToRefs } from 'pinia'
+// import { useTodosStore } from '~/store/todos';
+// import { storeToRefs } from 'pinia'
 
-const store = useTodosStore();
-const { todos }: any = storeToRefs(store)
-const { fetchTodos } = store;
-await fetchTodos();
+// const store = useTodosStore();
+// const { todos }: any = storeToRefs(store)
+// const { fetchTodos } = store;
+// await fetchTodos();
 
 definePageMeta({
     middleware: 'auth'
@@ -16,9 +16,10 @@ definePageMeta({
      <h1>Welcome to the homepage index.vue</h1>
      <div>
       <h1>Todos:</h1>
-      <ul v-for="todo in todos" :key="todo.id">
+      <ModalsAddress />
+      <!-- <ul v-for="todo in todos" :key="todo.id">
         <li>{{ todo.title }}</li>
-      </ul>
+      </ul> -->
     </div>
     </div>
   </template>

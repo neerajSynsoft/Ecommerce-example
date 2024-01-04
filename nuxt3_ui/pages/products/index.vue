@@ -4,7 +4,7 @@ definePageMeta({
     middleware: 'auth'
 })
 
-const { data: products } = await useFetch<[Product]>('http://localhost:8080/api/products')
+const { data: products } = await useFetch<[Product]>('api/product')
 
 </script>
 

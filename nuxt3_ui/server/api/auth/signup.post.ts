@@ -10,6 +10,7 @@ export default defineEventHandler(async (event: any) => {
     await userSignupSchema.validate(reqBody, { abortEarly: false });
 
     const password = bcrypt.hashSync(reqBody.password, 10);
+    console.log('req.body=====',reqBody);
 
     const params = {
       phone: reqBody.phone,

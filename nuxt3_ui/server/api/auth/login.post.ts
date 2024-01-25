@@ -27,6 +27,7 @@ export default defineEventHandler(async (event: any) => {
           let token = jwt.sign(
             {
               userId: data._id,
+              name: data.name,
               email: data.email,
               // role: result.role
             },

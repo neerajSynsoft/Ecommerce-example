@@ -6,11 +6,9 @@ export default defineEventHandler(async (event: any) => {
   try {
     // Read the body of the request
     const reqBody = await readBody(event);
-    // const booody = JSON.parse(reqBody)
     await userSignupSchema.validate(reqBody, { abortEarly: false });
 
     const password = bcrypt.hashSync(reqBody.password, 10);
-    console.log('req.body=====',reqBody);
 
     const params = {
       phone: reqBody.phone,
@@ -38,15 +36,8 @@ export default defineEventHandler(async (event: any) => {
       });
     }
 
-    // Query the Users model for username existence
-    // const usernameExists = await User.findOne({ username: reqBody.username });
-    // if (usernameExists) {
-    //   return { statusCode: 400, body: JSON.stringify({ success: false, errors: [{ msg: "Username is already exist", param: "username" }] }) };
-    // }
-
     const newUser = new userModal({ ...params });
     const savedUser = await newUser.save();
-    console.log("savedUser===", savedUser);
 
     return savedUser;
   } catch (error: any) {

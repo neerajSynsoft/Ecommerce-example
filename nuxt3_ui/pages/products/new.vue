@@ -19,8 +19,29 @@ const isNewProduct = ref(true)
 const enableProductOptions = ref(true)
 const isProductOptionsEnable = ref("Enable")
 const wholeSaleDataList = ref([{ count: "", price: "" }])
-const items = ['Add Product', 'Checkout Page', 'Success Page']
+const navItems = ['Add Product', 'Checkout Page', 'Success Page']
 const payload = ref<any>({ ...productInit, ...formInit })
+
+  const items = [{
+  slot: 'desktop',
+  label: 'Desktop',
+  icon: 'i-heroicons-computer-desktop',
+}, {
+  slot: 'mobile',
+  label: 'Mobile',
+  icon: 'i-heroicons-device-phone-mobile',
+}]
+
+const accountForm = reactive({ name: 'Benjamin', username: 'benjamincanac' })
+const passwordForm = reactive({ currentPassword: '', newPassword: '' })
+
+function onSubmitAccount () {
+  console.log('Submitted form:', accountForm)
+}
+
+function onSubmitPassword () {
+  console.log('Submitted form:', passwordForm)
+}
 const statusOptions = [
   {
     label: t("common.draft"),
@@ -199,7 +220,7 @@ const removeWhosale = (num: number) => {
           @click="handelQuit" />
         <div>
           <ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
-            <li v-for="(item, index) in items" @click="handelStep(item)"
+            <li v-for="(item, index) in navItems" @click="handelStep(item)"
               :class="`flex items-center ${item === activeItem ? 'text-white' : 'text-[#97A3DD]'} cursor-pointer space-x-2.5 rtl:space-x-reverse`">
               <UIcon v-if="index > 0" name="i-heroicons-chevron-right-solid" class="bg-white mr-2" />
               <span
@@ -217,7 +238,7 @@ const removeWhosale = (num: number) => {
     </header>
 
     <section class="relative w-full max-w-screen-2xl m-auto mt-16 flex bg-blue-50">
-      <div class="w-[50%] min-h-full p-7">
+      <div class="w-[50%] min-h-full p-7 border-r border-[#bfcee0]">
         <div class="section_title mt-0 mb-7 add-new-product__header-title"
           :class="payload.formOption == 'single' && !isNewProduct ? 'add-new-product__header-title--with-action' : ''">
           <div v-if="isNewProduct"
@@ -1006,13 +1027,64 @@ const removeWhosale = (num: number) => {
                       <img src="~/assets/img/icon/captcha-settings-icon.svg" />
                       <p class="text-[#203551] font-medium text-md">{{ $t("common.security") }}</p>
                     </div>
-                    <div class="flex items-center justify-between">
+                    <div :class="`flex items-center justify-between ${payload.isCaptchaEnable && 'border-b border-blue-100'}`">
                       <div class="input-label mb-2">
-                        <div class="font-medium">{{ $t("text.enableCaptcha") }}</div>
+                        <div class="font-medium py-1">{{ $t("text.enableCaptcha") }}</div>
                         <p class="text-gray-400 text-sm max-w-[420px]">{{ $t("text.showCaptchaMsg") }}</p>
                       </div>
                       <UToggle size="md" v-model="payload.isCaptchaEnable" />
                     </div>
+                    <template v-if="payload.isCaptchaEnable">
+                    <div class="border-b border-blue-100 py-3">
+                      <div class="font-medium text-sm py-1">{{ $t("text.buildInCondition") }}</div>   
+                    <div class="flex items-center justify-between">
+                      <div class="input-label mb-2">
+                        <div class="font-medium text-sm py-1">{{ $t("text.showCaptchaMsg1") }}
+                          {{
+                            payload.captchaSettings.setting1.orderCount
+                          }}
+                          {{ $t("text.showCaptchaMsg2") }}
+                          {{ payload.captchaSettings.setting1.hours }}
+                          {{ $t("text.showCaptchaMsg3") }}</div>
+                        <p class="text-gray-400 text-sm max-w-[420px]">{{ $t("text.showCaptchaMsgSub1") }}</p>
+                      </div>
+                      <UToggle size="md" v-model="payload.captchaSettings.setting1.isEnable" />
+                    </div>
+                    <span class="text-primary text-sm max-w-[420px] cursor-pointer">{{ $t("common.settings") }}</span>
+                  </div>
+                  <div class="border-b border-blue-100 py-3">
+                    <div class="flex items-center justify-between">
+                      <div class="input-label text-sm mb-2">
+                        <div class="font-medium py-1">{{ $t("text.showCaptchaMsg1") }}
+                          {{
+                            payload.captchaSettings.setting2.orderCount
+                          }}
+                          {{ $t("text.showCaptchaMsg2") }}
+                          {{ payload.captchaSettings.setting2.hours }}
+                          {{ $t("text.showCaptchaMsg3") }}</div>
+                        <p class="text-gray-400 text-sm max-w-[420px]">{{ $t("text.showCaptchaMsgSub2") }}</p>
+                      </div>
+                      <UToggle size="md" v-model="payload.captchaSettings.setting2.isEnable" />
+                    </div>
+                    <span class="text-primary text-sm max-w-[420px] cursor-pointer">{{ $t("common.settings") }}</span>
+                  </div>
+                  <div class="border-b border-blue-100 py-3">
+                    <div class="flex items-center justify-between">
+                      <div class="input-label text-sm mb-2">
+                        <div class="font-medium py-1">{{ $t("text.showCaptchaMsg1") }}
+                          {{
+                            payload.captchaSettings.setting3.orderCount
+                          }}
+                          {{ $t("text.showCaptchaMsg2") }}
+                          {{ payload.captchaSettings.setting3.hours }}
+                          {{ $t("text.showCaptchaMsg3") }}</div>
+                        <p class="text-gray-400 text-sm max-w-[420px]">{{ $t("text.showCaptchaMsgSub3") }}</p>
+                      </div>
+                      <UToggle size="md" v-model="payload.captchaSettings.setting3.isEnable" />
+                    </div>
+                    <span class="text-primary text-sm max-w-[420px] cursor-pointer">{{ $t("common.settings") }}</span>
+                  </div>
+                  </template>    
                   </div>
                 </div>
               </div>
@@ -1036,8 +1108,69 @@ const removeWhosale = (num: number) => {
         </div>
       </div>
       <div
-        class="p-7 overflow-y-auto left-[50%] right-0 border-l border-[#bfcee0] fixed max-h-[calc(100%-65px)] w-[50%] max-w-[768px]">
-        fghrdh
+        class="p-7 overflow-y-auto left-[50%] right-0 fixed max-h-[calc(100%-65px)] w-[50%] max-w-[768px]">
+        <UTabs :items="items" class="w-full">
+          <template #default="{ item, index, selected }">
+            <div class="flex items-center gap-2 relative truncate">
+              <UIcon :name="item.icon" class="w-4 h-4 flex-shrink-0" />
+      
+              <span class="truncate"> {{ item.label }}</span>
+      
+              <span v-if="selected" class="absolute -right-4 w-2 h-2 rounded-full bg-primary-500 dark:bg-primary-400" />
+            </div>
+          </template>
+          <template #desktop="{ item }">
+            <UCard @submit.prevent="onSubmitAccount">
+              <template #header>
+                <p class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
+                  {{ item.label }}
+                </p>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                  Make changes to your account here. Click save when you're done.
+                </p>
+              </template>
+      
+              <UFormGroup label="Name" name="name" class="mb-3">
+                <UInput v-model="accountForm.name" />
+              </UFormGroup>
+              <UFormGroup label="Username" name="username">
+                <UInput v-model="accountForm.username" />
+              </UFormGroup>
+      
+              <template #footer>
+                <UButton type="submit" color="black">
+                  Save account
+                </UButton>
+              </template>
+            </UCard>
+          </template>
+      
+          <template #mobile="{ item }">
+            <UCard @submit.prevent="onSubmitPassword">
+              <template #header>
+                <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
+                  {{ item.label }}
+                </h3>
+                <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                  Change your password here. After saving, you'll be logged out.
+                </p>
+              </template>
+      
+              <UFormGroup label="Current Password" name="current" required class="mb-3">
+                <UInput v-model="passwordForm.currentPassword" type="password" required />
+              </UFormGroup>
+              <UFormGroup label="New Password" name="new" required>
+                <UInput v-model="passwordForm.newPassword" type="password" required />
+              </UFormGroup>
+      
+              <template #footer>
+                <UButton type="submit" color="black">
+                  Save password
+                </UButton>
+              </template>
+            </UCard>
+          </template>
+        </UTabs>
       </div>
 
     </section>

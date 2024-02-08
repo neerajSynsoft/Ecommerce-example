@@ -1,7 +1,5 @@
 import express from "express";
-import productRoutes from "./src/routes/productRoutes.js";
-import categoryRoutes from "./src/routes/categoryRoutes.js";
-import userRoutes from "./src/routes/userRoutes.js";
+import Routes from "./src/routes";
 import { connectToDatabase } from "./src/dbConnection/db.js";
 
 const app = express();
@@ -25,14 +23,9 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-// Use product routes
-app.use("/api", productRoutes);
+app.use("/", Routes)
 
-// Use category routes
-app.use("/api", categoryRoutes);
 
-// Use user routes
-app.use("/api", userRoutes);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);

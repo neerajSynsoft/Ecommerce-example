@@ -1,6 +1,7 @@
 import express from "express";
 import Routes from "./src/routes/index.js";
 import { connectToDatabase } from "./src/dbConnection/db.js";
+import 'dotenv/config'
 
 const app = express();
 
@@ -11,9 +12,7 @@ app.use((req, res, next) => {
   next();
 });
 
-console.log('process.env.PORT===',process.env.PORT);
-
-const port = process.env.PORT || 8080;
+const port = process.env.APP_PORT || 8080;
 connectToDatabase();
 
 // Middleware to parse JSON

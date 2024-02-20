@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 
 export const connectToDatabase = async () => {
   try {
-    await mongoose.connect('mongodb+srv://neerajk:WIguOHcMECR9wiEc@mycluster.ih1adcy.mongodb.net/sample_restaurants', {
+    await mongoose.connect(process.env.APP_MONGODBURL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

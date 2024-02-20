@@ -6,12 +6,12 @@ import userRoutes from "./userRoutes.js";
 const router = express.Router();
 
 // Use product routes
-app.use("/api", productRoutes);
+router.use("/api", productRoutes);
 
 // Use category routes
-app.use("/api", categoryRoutes);
+router.use("/api", categoryRoutes);
 
 // Use user routes
-app.use("/api", userRoutes);
+router.use("/api", userRoutes);
 
 export default router;

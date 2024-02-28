@@ -56,7 +56,7 @@ const schema = object({
 
 const initialValues = { email: "", password: "" };
 definePageMeta({
-    layout: false,
+  layout: false,
 });
 </script>
 <template>
@@ -97,14 +97,14 @@ definePageMeta({
                   <label for="rememberUser" class="text-gray-500">Remember me</label>
                 </div>
               </div>
-              <NuxtLink to="/signup" class="text-sm font-medium text-primary-600 hover:underline">Forgot
+              <NuxtLink to="/signup" class="text-sm font-medium text-primary hover:underline">Forgot
                 password?</NuxtLink>
             </div>
             <button type="submit" :disabled="loading"
-              :class="`w-full text-white ${loading ? 'bg-primary-300 cursor-not-allowed' : 'bg-primary-600 hover:bg-primary-700'}  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center`">Sign
+              :class="`w-full text-white ${loading ? 'bg-primary-300 cursor-not-allowed' : 'bg-primary hover:bg-primary-700'}  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center`">Sign
               in</button>
             <p class="text-sm font-light text-gray-500">
-              Don’t have an account yet?<NuxtLink to="/signup" class="font-medium text-primary-600 hover:underline">
+              Don’t have an account yet?<NuxtLink to="/signup" class="font-medium text-primary hover:underline">
                 Sign up</NuxtLink>
             </p>
           </VeeForm>

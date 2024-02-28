@@ -1,19 +1,28 @@
-// Import the necessary modules
 import { defineEventHandler, readBody } from 'h3';
-import Users from '~/server/models/userModel.js';
+// import User from '~/server/models/userModel.js';
 
 // Define the event handler
-const handler = async (event:any) => {
+export const handler1 = async (event:any) => {
   try {
     // Read the body of the request
     const body = await readBody(event);
     
-    // Query the Users model (assuming this is a MongoDB model)
-    const products = await Users.find();
-
     // Log the event and return the result
-    console.log('event---defineEventHandler', body);
-    return { statusCode: 200, body: JSON.stringify({ products, body }) };
+    console.log('req---body handler1', body);
+    return { statusCode: 200, body: JSON.stringify({ body }) };
+  } catch (error) {
+    console.error('Error in API handler:', error);
+    return { statusCode: 500, body: 'Internal Server Error' };
+  }
+};
+export const handler2 = async (event:any) => {
+  try {
+    // Read the body of the request
+    const body = await readBody(event);
+    
+    // Log the event and return the result
+    console.log('req---body handler2', body);
+    return { statusCode: 200, body: JSON.stringify({ body }) };
   } catch (error) {
     console.error('Error in API handler:', error);
     return { statusCode: 500, body: 'Internal Server Error' };
@@ -21,6 +30,6 @@ const handler = async (event:any) => {
 };
 
 // Export the event handler
-export default defineEventHandler(handler);
+// export default defineEventHandler(handler2);
 
 

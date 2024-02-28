@@ -1,8 +1,7 @@
 import express from "express";
-import productRoutes from "./src/routes/productRoutes.js";
-import categoryRoutes from "./src/routes/categoryRoutes.js";
-import userRoutes from "./src/routes/userRoutes.js";
+import Routes from "./src/routes/index.js";
 import { connectToDatabase } from "./src/dbConnection/db.js";
+import 'dotenv/config'
 
 const app = express();
 
@@ -13,26 +12,20 @@ app.use((req, res, next) => {
   next();
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.APP_PORT || 8080;
 connectToDatabase();
 
 // Middleware to parse JSON
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
-  res.send("Hello World!");
+  res.send("Hello World! this is Two Factor Authentication Example");
 });
 
-// Use product routes
-app.use("/api", productRoutes);
-
-// Use category routes
-app.use("/api", categoryRoutes);
-
-// Use user routes
-app.use("/api", userRoutes);
+app.use("/", Routes)
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);

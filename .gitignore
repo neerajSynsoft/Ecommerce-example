@@ -6,6 +6,9 @@ npm-debug.log
 
 # Nuxt build
 .nuxt
+.env
+.env.*
+!.env.example
 
 # Nuxt generate
 # dist

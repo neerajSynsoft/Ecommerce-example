@@ -1,6 +1,7 @@
 export default defineAppConfig({
-    ui:{
-        primary: 'blue',
-        gray: 'cool',
-    }
-})
+  title: "Mengantar App",
+  ui: {
+    primary: "blue",
+    gray: "cool",
+  },
+});

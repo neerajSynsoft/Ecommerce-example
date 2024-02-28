@@ -8,6 +8,8 @@ export const getAllRestaurants = async (req, res) => {
       pageSize = 50,
       sortBy = "name",
       sort = "desc",
+      location,
+      variety,
     } = req.query; // Set default values
 
     const skip = (pageNo - 1) * pageSize;
@@ -15,8 +17,16 @@ export const getAllRestaurants = async (req, res) => {
     const sortObject = {};
     sortObject[sortBy] = sort === "desc" ? -1 : 1;
 
+    const filterCriteria = {};
+    if (location) {
+      filterCriteria.borough = location;
+    }
+    if (variety) {
+      filterCriteria.cuisine = variety;
+    }
+
     // Get total count of restaurants
-    const totalCount = await Restaurant.countDocuments();
+    const totalCount = await Restaurant.countDocuments(filterCriteria);
 
     // Check if page is out of bounds
     if (pageNo > Math.ceil(totalCount / limit)) {
@@ -24,12 +34,39 @@ export const getAllRestaurants = async (req, res) => {
     }
 
     // Find restaurants with pagination options
-    const restaurants = await Restaurant.find({}, null, { skip, limit, sort: sortObject, });
+    const restaurants = await Restaurant.find(filterCriteria, null, {
+      skip,
+      limit,
+      sort: sortObject,
+    });
 
     res.json({
       restaurants,
       totalCount,
       totalPages: Math.ceil(totalCount / limit),
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getBoroughs = async (req, res) => {
+  try {
+    const Boroughs = await Restaurant.distinct("borough");
+
+    res.json({
+      Boroughs,
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+export const getCuisine = async (req, res) => {
+  try {
+    const Cuisine = await Restaurant.distinct("cuisine");
+
+    res.json({
+      Cuisine,
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
